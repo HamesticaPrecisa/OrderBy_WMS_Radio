@@ -1,0 +1,748 @@
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_cuenta.resources
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Trakeo.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+F:\RESPALDO SISTEMAS 02102015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\Radio 01122015\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\pc\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\pc\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PedidosPendientes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PedidosPendientes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PedidosPendientes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Columna.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PedidosPendientes.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Columna.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\RADIOFRECUENSIA VERSION FEB 2017\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\bin\Debug\SqlRDA.exe
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\bin\Debug\SqlRDA.pdb
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\bin\Debug\System.Data.SqlClient.dll
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_PedidosPendientes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_Columna.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.exe
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\obj\Debug\SqlRDA.pdb
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_TraqueoService.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_recepción.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CamionesAndenRecepcion.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaClientes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaContratos.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaChoferes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaProductos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\bin\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\bin\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_PedidosPendientes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_CamionesAndenRecepcion.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_recepción.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Lst_AyudaChoferes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Lst_AyudaClientes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Lst_AyudaContratos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Lst_AyudaProductos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Lst_AyudaSoportantes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_TraqueoService.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_Columna.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Lst_AyudaOrigenes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_temperaturas.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile recepcion\obj\Debug\SqlRDA.Frm_AdjuntaFotoRecepcion.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_AdjuntaFotoRecepcion.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_temperaturas.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaOrigenes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaSoportantes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\bin\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\bin\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Form1.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.ImprimeEtiqueta.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_Pos_Sug.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_PedidosPendientes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_AdjuntaFotoRecepcion.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_CamionesAndenRecepcion.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_recepción.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_temperaturas.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Lst_AyudaChoferes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Lst_AyudaClientes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Lst_AyudaContratos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Lst_AyudaOrigenes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Lst_AyudaProductos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Lst_AyudaSoportantes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_TraqueoService.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_Columna.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017\obj\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\bin\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\bin\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Form1.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.ImprimeEtiqueta.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_Pos_Sug.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_PedidosPendientes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_AdjuntaFotoRecepcion.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_CamionesAndenRecepcion.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_recepción.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_temperaturas.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Lst_AyudaChoferes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Lst_AyudaClientes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Lst_AyudaContratos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Lst_AyudaOrigenes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Lst_AyudaProductos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Lst_AyudaSoportantes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_TraqueoService.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_Columna.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_PreparaPicking.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Frm_auditoria.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Lst_AyudaAuditoria.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile 31-07-2017 -SUGERIDP\obj\Debug\SqlRDA.Lst_AyudaEtiqueta.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_auditoria.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaAuditoria.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Form1.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.ImprimeEtiqueta.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Pos_Sug.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreparaPicking.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaEtiqueta.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_auditoria.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaAuditoria.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Form1.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.ImprimeEtiqueta.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Pos_Sug.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreparaPicking.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PedidosPendientes.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_AdjuntaFotoRecepcion.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CamionesAndenRecepcion.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_recepción.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_temperaturas.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaChoferes.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaClientes.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaContratos.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaEtiqueta.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaOrigenes.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaProductos.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaSoportantes.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_TraqueoService.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Columna.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\radioultimaver\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_auditoria.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaAuditoria.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Form1.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.ImprimeEtiqueta.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Pos_Sug.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreparaPicking.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_AdjuntaFotoRecepcion.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CamionesAndenRecepcion.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_recepción.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_temperaturas.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaChoferes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaClientes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaContratos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaEtiqueta.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaOrigenes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaProductos.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaSoportantes.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Repaletiza.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_TraqueoService.resources
+C:\Users\Programacion\Desktop\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Columna.resources
+C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Repaletiza.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_auditoria.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaAuditoria.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Form1.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.ImprimeEtiqueta.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Pos_Sug.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreparaPicking.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PedidosPendientes.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_AdjuntaFotoRecepcion.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CamionesAndenRecepcion.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_recepción.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_temperaturas.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaChoferes.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaClientes.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaContratos.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaEtiqueta.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaOrigenes.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaProductos.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaSoportantes.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Repaletiza.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_TraqueoService.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Columna.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\Programacion\Desktop\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\bin\Debug\SqlRDA.exe
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\bin\Debug\SqlRDA.pdb
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlClient.dll
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Andenes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_auditoria.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaAuditoria.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Etiquetado.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_ejemplo.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Form1.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.ImprimeEtiqueta.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.PosicionRecepciones.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_IngresoTunel.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmInventario2vb.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Pos_Sug.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_RevisionPosiciones.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaClienteParaAND.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.FrmDespacho.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_buscaCliente.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_cuenta.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CajasPedido.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreDespacho.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PreparaPicking.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PedidosPendientes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_AdjuntaFotoRecepcion.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_CamionesAndenRecepcion.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_recepción.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_temperaturas.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaChoferes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaClientes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaContratos.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaEtiqueta.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaOrigenes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaProductos.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Lst_AyudaSoportantes.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Repaletiza.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.EstadoPedido.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_FaR.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Revision_RaF.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_TraqueoService.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Columna.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_PorTraquear.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Inicio.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Preparar.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Menu.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.frm_Pos.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_trazabilidad.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.exe
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.pdb
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Pedidos_Locales.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Pedidos_Locales_Detalle_Local.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Pedidos_Locales_Detalle_Pallets.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Pedidos_Locales_Pallet_Preparar.resources
+C:\Users\WEBMASTER\Desktop\prg\Sistemas Darwin\radio 07\Sql Server + Windows Mobile\obj\Debug\SqlRDA.Frm_Pedidos_Locales_Pallet_Trackeo_Preparar.resources

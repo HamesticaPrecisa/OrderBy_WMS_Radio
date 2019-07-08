@@ -1,0 +1,36 @@
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\bin\Release\SqlRDA.exe
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\bin\Release\System.Data.SqlClient.dll
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Release\ResolveAssemblyReference.cache
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.exe
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Posicionar.resources
+C:\Users\programador\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Trazabilidad.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\bin\Release\SqlRDA.exe
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\bin\Release\System.Data.SqlClient.dll
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_Etiquetado.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.frm_ejemplo.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.PosicionRecepciones.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.FrmInventario.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.FrmDespacho.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_buscaCliente.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_cuenta.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_CajasPedido.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_EstaEnPedido.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_ListadoPedidos.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_PreDespacho.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.EstadoPedido.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_EstadoRevision.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Revision_FaR.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Revision_RaF.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_PorTraquear.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_Traqueo.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_Traqueo_largo.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_Inicio.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_Preparar.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_Menu.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.frm_Pos.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.Frm_trazabilidad.resources
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.vbproj.GenerateResource.Cache
+C:\Users\Victor alejandro\Desktop\Sql Server + Windows Mobile\obj\Release\SqlRDA.exe

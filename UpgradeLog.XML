@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SqlRDA">
+</Property><Property Name="Archivo de la solución" Value="C:\Users\programador\Desktop\Sql Server + Windows Mobile\SqlRDA.sln">
+</Property><Property Name="Archivo de opciones de usuario" Value="C:\Users\programador\Desktop\Sql Server + Windows Mobile\SqlRDA.suo">
+</Property><Property Name="Date" Value="martes, 28 de mayo de 2013">
+</Property><Property Name="Time" Value="15:10">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="SqlRDA.sln" Description="La copia C:\Users\programador\Desktop\Sql Server + Windows Mobile\Backup\SqlRDA.sln del archivo se ha realizado correctamente">
+</Event><Event ErrorLevel="0" Project="" Source="SqlRDA.suo" Description="La copia C:\Users\programador\Desktop\Sql Server + Windows Mobile\Backup\SqlRDA.suo del archivo se ha realizado correctamente">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="SqlRDA.vbdproj" Description="Se realizó correctamente la copia de seguridad del archivo de proyecto C:\Users\programador\Desktop\Sql Server + Windows Mobile\Backup\SqlRDA.vbdproj">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="SqlRDA.vbdproj.user" Description="La copia de seguridad C:\Users\programador\Desktop\Sql Server + Windows Mobile\Backup\SqlRDA.vbdproj.user del archivo se ha creado correctamente">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="AssemblyInfo.vb" Description="Se realizó correctamente la copia de seguridad del archivo C:\Users\programador\Desktop\Sql Server + Windows Mobile\Backup\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="frmSQLRda.vb" Description="Se realizó correctamente la copia de seguridad del archivo C:\Users\programador\Desktop\Sql Server + Windows Mobile\Backup\frmSQLRda.vb">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="frmSQLRda.resx" Description="Se realizó correctamente la copia de seguridad del archivo C:\Users\programador\Desktop\Sql Server + Windows Mobile\Backup\frmSQLRda.resx">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="SqlRDA.vbproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="SqlRDA.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SqlRDA.sln" Description="La solución se convirtió correctamente">
+</Event><Event ErrorLevel="3" Project="" Source="SqlRDA.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="frmSQLRda.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="frmSQLRda.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="SqlRDA.vbproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event></UpgradeLog>

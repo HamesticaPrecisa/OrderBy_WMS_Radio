@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "instalar", "instalar\instalar.vddproj", "{C89A66EA-C78C-4D6D-8204-896E5BA9CBDA}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SqlRDA", "SqlRDA.vbproj", "{FB55E4F9-5DE7-4870-8BE8-23B5C8FEB691}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C89A66EA-C78C-4D6D-8204-896E5BA9CBDA}.Debug|Any CPU.ActiveCfg = Debug
+		{C89A66EA-C78C-4D6D-8204-896E5BA9CBDA}.Debug|Any CPU.Build.0 = Debug
+		{C89A66EA-C78C-4D6D-8204-896E5BA9CBDA}.Debug|Any CPU.Deploy.0 = Debug
+		{C89A66EA-C78C-4D6D-8204-896E5BA9CBDA}.Release|Any CPU.ActiveCfg = Release
+		{C89A66EA-C78C-4D6D-8204-896E5BA9CBDA}.Release|Any CPU.Build.0 = Release
+		{FB55E4F9-5DE7-4870-8BE8-23B5C8FEB691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB55E4F9-5DE7-4870-8BE8-23B5C8FEB691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB55E4F9-5DE7-4870-8BE8-23B5C8FEB691}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FB55E4F9-5DE7-4870-8BE8-23B5C8FEB691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB55E4F9-5DE7-4870-8BE8-23B5C8FEB691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB55E4F9-5DE7-4870-8BE8-23B5C8FEB691}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

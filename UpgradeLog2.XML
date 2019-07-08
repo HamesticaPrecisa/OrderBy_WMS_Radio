@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SqlRDA">
+</Property><Property Name="Archivo de la solución" Value="C:\Users\programador\Desktop\Sql Server + Windows Mobile\SqlRDA.sln">
+</Property><Property Name="Date" Value="jueves, 10 de octubre de 2013">
+</Property><Property Name="Time" Value="11:44">
+</Property><Property Name="Número de registro" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="SqlRDA" Source="SqlRDA.vbproj" Description="El archivo de proyecto no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="SqlRDA.vbproj" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="TrakeoTMP" Source="..\TrakeoTMP\TrakeoTMP.vbproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="TrakeoTMP" Source="..\TrakeoTMP\TrakeoTMP.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SqlRDA.sln" Description="El archivo de soluciones no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="" Source="SqlRDA.sln" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="TrakeoTMP" Source="..\TrakeoTMP\Formularios\Frm_AddRece.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="TrakeoTMP" Source="..\TrakeoTMP\Formularios\Frm_AddRece.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TrakeoTMP" Source="..\TrakeoTMP\Formularios\Frm_Trakeo.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="TrakeoTMP" Source="..\TrakeoTMP\Formularios\Frm_Trakeo.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TrakeoTMP" Source="..\TrakeoTMP\My Project\Resources.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="TrakeoTMP" Source="..\TrakeoTMP\My Project\Resources.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TrakeoTMP" Source="..\TrakeoTMP\TrakeoTMP.vbproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event></UpgradeLog>

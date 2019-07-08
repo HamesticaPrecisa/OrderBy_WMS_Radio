@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SqlRDA">
+</Property><Property Name="Archivo de la solución" Value="C:\Users\WEBMASTER\Desktop\prg\Sql Server + Windows Mobile - de\SqlRDA.sln">
+</Property><Property Name="Date" Value="miércoles, 22 de marzo de 2017">
+</Property><Property Name="Time" Value="9:16">
+</Property></Properties><Event ErrorLevel="0" Project="SqlRDA" Source="SqlRDA.vbproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="SqlRDA.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SqlRDA.sln" Description="El archivo de soluciones no requiere conversión.">
+</Event><Event ErrorLevel="3" Project="" Source="SqlRDA.sln" Description="No requiere conversión">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Andenes\Andenes.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Andenes\Andenes.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Etiquetado\Frm_Etiquetado.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Etiquetado\Frm_Etiquetado.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Fotos\frm_ejemplo.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Fotos\frm_ejemplo.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Informes\PosicionRecepciones.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Informes\PosicionRecepciones.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\IngresoTunel\Frm_IngresoTunel.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\IngresoTunel\Frm_IngresoTunel.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Inventario\FrmInventario.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Inventario\FrmInventario.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Inventario\FrmInventario2vb.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Inventario\FrmInventario2vb.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Posicionamiento\Frm_cuenta.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Posicionamiento\Frm_cuenta.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Posicionamiento\Frm_Pos.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Posicionamiento\Frm_Pos.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Posicionamiento\Frm_RevisionPosiciones.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Posicionamiento\Frm_RevisionPosiciones.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Posicionamiento\Frm_trazabilidad.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Posicionamiento\Frm_trazabilidad.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_buscaCliente.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_buscaCliente.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_buscaClienteParaAND.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_buscaClienteParaAND.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_CajasPedido.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_CajasPedido.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_EstaEnPedido.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_EstaEnPedido.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_ListadoPedidos.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_ListadoPedidos.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_PreDespacho.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\PreDespacho\Frm_PreDespacho.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\PreDespacho\FrmDespacho.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\PreDespacho\FrmDespacho.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\PreparacionDespacho\Frm_PedidosPendientes.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\PreparacionDespacho\Frm_PedidosPendientes.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\PreparacionDespacho\Frm_Preparar.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\PreparacionDespacho\Frm_Preparar.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Revision Traspaso\EstadoPedido.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Revision Traspaso\EstadoPedido.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Revision Traspaso\Frm_EstadoRevision.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Revision Traspaso\Frm_EstadoRevision.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Revision Traspaso\Revision_FaR.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Revision Traspaso\Revision_FaR.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Revision Traspaso\Revision_RaF.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Revision Traspaso\Revision_RaF.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Trakeo\Frm_Columna.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Trakeo\Frm_Columna.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Trakeo\Frm_PorTraquear.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Trakeo\Frm_PorTraquear.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Trakeo\Frm_Traqueo.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Trakeo\Frm_Traqueo.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Formularios\Trakeo\Frm_Traqueo_largo.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Formularios\Trakeo\Frm_Traqueo_largo.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Frm_Inicio.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Frm_Inicio.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="Frm_Menu.resx" Description="Archivo convertido correctamente">
+</Event><Event ErrorLevel="3" Project="SqlRDA" Source="Frm_Menu.resx" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SqlRDA" Source="SqlRDA.vbproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event></UpgradeLog>

@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB55E4F9-5DE7-4870-8BE8-23B5C8FEB691}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <ApplicationIcon>1384289413_173153.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SqlRDA</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <OutputFileFolder>\Program Files\SqlRDA</OutputFileFolder>
+    <RootNamespace>SqlRDA</RootNamespace>
+    <StartupObject>SqlRDA.Frm_Inicio</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Empty</MyType>
+    <OSVersion>5.02</OSVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <DeployDirSuffix>$(AssemblyName)</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>0</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>0</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>None</DebugType>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.SqlClient">
+      <Name>System.Data.SqlClient</Name>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataGrid">
+      <Name>System.Windows.Forms.DataGrid</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.CompilerServices" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\Conexion.vb" />
+    <Compile Include="Clases\Iform.vb" />
+    <Compile Include="Clases\ModPublico.vb" />
+    <Compile Include="Formularios\Andenes\Andenes.Designer.vb">
+      <DependentUpon>Andenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Andenes\Andenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Auditoria\Frm_Auditoria.Designer.vb">
+      <DependentUpon>Frm_Auditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Auditoria\Frm_Auditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Auditoria\Lst_AyudaAuditoria.Designer.vb">
+      <DependentUpon>Lst_AyudaAuditoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Auditoria\Lst_AyudaAuditoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Etiquetado\Frm_Etiquetado.Designer.vb">
+      <DependentUpon>Frm_Etiquetado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Etiquetado\Frm_Etiquetado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Fotos\frm_ejemplo.Designer.vb">
+      <DependentUpon>frm_ejemplo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Fotos\frm_ejemplo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Imprimir\BarCode.vb" />
+    <Compile Include="Formularios\Imprimir\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Imprimir\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Imprimir\ImprimeEtiqueta.Designer.vb">
+      <DependentUpon>ImprimeEtiqueta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Imprimir\ImprimeEtiqueta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Imprimir\PrintCE.vb" />
+    <Compile Include="Formularios\Informes\PosicionRecepciones.Designer.vb">
+      <DependentUpon>PosicionRecepciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Informes\PosicionRecepciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IngresoTunel\Frm_IngresoTunel.Designer.vb">
+      <DependentUpon>Frm_IngresoTunel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IngresoTunel\Frm_IngresoTunel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inventario\FrmInventario.Designer.vb">
+      <DependentUpon>FrmInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Inventario\FrmInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inventario\FrmInventario2vb.Designer.vb">
+      <DependentUpon>FrmInventario2vb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Inventario\FrmInventario2vb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_Pos_Sug.Designer.vb">
+      <DependentUpon>Frm_Pos_Sug.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_Pos_Sug.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_RevisionPosiciones.Designer.vb">
+      <DependentUpon>Frm_RevisionPosiciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_RevisionPosiciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_buscaClienteParaAND.Designer.vb">
+      <DependentUpon>Frm_buscaClienteParaAND.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_buscaClienteParaAND.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\FrmDespacho.Designer.vb">
+      <DependentUpon>FrmDespacho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\FrmDespacho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_buscaCliente.Designer.vb">
+      <DependentUpon>Frm_buscaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_buscaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_cuenta.Designer.vb">
+      <DependentUpon>Frm_cuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_cuenta.vb">
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_CajasPedido.Designer.vb">
+      <DependentUpon>Frm_CajasPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_CajasPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_EstaEnPedido.Designer.vb">
+      <DependentUpon>Frm_EstaEnPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_EstaEnPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_ListadoPedidos.Designer.vb">
+      <DependentUpon>Frm_ListadoPedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_ListadoPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_PreDespacho.Designer.vb">
+      <DependentUpon>Frm_PreDespacho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreDespacho\Frm_PreDespacho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales.Designer.vb">
+      <DependentUpon>Frm_Pedidos_Locales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Detalle_Local.Designer.vb">
+      <DependentUpon>Frm_Pedidos_Locales_Detalle_Local.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Detalle_Local.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Detalle_Pallets.Designer.vb">
+      <DependentUpon>Frm_Pedidos_Locales_Detalle_Pallets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Detalle_Pallets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Pallet_Preparar.Designer.vb">
+      <DependentUpon>Frm_Pedidos_Locales_Pallet_Preparar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Pallet_Preparar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Pallet_Trackeo_Preparar.Designer.vb">
+      <DependentUpon>Frm_Pedidos_Locales_Pallet_Trackeo_Preparar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Pallet_Trackeo_Preparar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_PreparaPicking.Designer.vb">
+      <DependentUpon>Frm_PreparaPicking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_PreparaPicking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_PedidosPendientes.Designer.vb">
+      <DependentUpon>Frm_PedidosPendientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_PedidosPendientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Frm_AdjuntaFotoRecepcion.Designer.vb">
+      <DependentUpon>Frm_AdjuntaFotoRecepcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Frm_AdjuntaFotoRecepcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Frm_CamionesAndenRecepcion.Designer.vb">
+      <DependentUpon>Frm_CamionesAndenRecepcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Frm_CamionesAndenRecepcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Frm_recepcion.Designer.vb">
+      <DependentUpon>Frm_recepcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Frm_recepcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Frm_Temperaturas.Designer.vb">
+      <DependentUpon>Frm_Temperaturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Frm_Temperaturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Lst_AyudaChoferes.Designer.vb">
+      <DependentUpon>Lst_AyudaChoferes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Lst_AyudaChoferes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Lst_AyudaClientes.Designer.vb">
+      <DependentUpon>Lst_AyudaClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Lst_AyudaClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Lst_AyudaContratos.Designer.vb" />
+    <Compile Include="Formularios\Recepción\Lst_AyudaContratos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Lst_AyudaEtiqueta.Designer.vb" />
+    <Compile Include="Formularios\Recepción\Lst_AyudaEtiqueta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Lst_AyudaOrigenes.Designer.vb" />
+    <Compile Include="Formularios\Recepción\Lst_AyudaOrigenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Lst_AyudaProductos.Designer.vb" />
+    <Compile Include="Formularios\Recepción\Lst_AyudaProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Recepción\Lst_AyudaSoportantes.Designer.vb" />
+    <Compile Include="Formularios\Recepción\Lst_AyudaSoportantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Repaletizado\Frm_Repaletiza.Designer.vb">
+      <DependentUpon>Frm_Repaletiza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Repaletizado\Frm_Repaletiza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Revision Traspaso\EstadoPedido.Designer.vb">
+      <DependentUpon>EstadoPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Revision Traspaso\EstadoPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Revision Traspaso\Frm_EstadoRevision.Designer.vb">
+      <DependentUpon>Frm_EstadoRevision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Revision Traspaso\Frm_EstadoRevision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Revision Traspaso\Revision_FaR.Designer.vb">
+      <DependentUpon>Revision_FaR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Revision Traspaso\Revision_FaR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Revision Traspaso\Revision_RaF.Designer.vb">
+      <DependentUpon>Revision_RaF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Revision Traspaso\Revision_RaF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_TraqueoService.Designer.vb">
+      <DependentUpon>Frm_TraqueoService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_TraqueoService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_Columna.Designer.vb">
+      <DependentUpon>Frm_Columna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_Columna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_PorTraquear.Designer.vb">
+      <DependentUpon>Frm_PorTraquear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_PorTraquear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_Traqueo.Designer.vb">
+      <DependentUpon>Frm_Traqueo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_Traqueo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_Traqueo_largo.Designer.vb">
+      <DependentUpon>Frm_Traqueo_largo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_Traqueo_largo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Inicio.Designer.vb">
+      <DependentUpon>Frm_Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_trazabilidad.Designer.vb">
+      <DependentUpon>Frm_trazabilidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_trazabilidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\funciones.vb" />
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Preparar.Designer.vb">
+      <DependentUpon>Frm_Preparar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PreparacionDespacho\Frm_Preparar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Menu.Designer.vb">
+      <DependentUpon>Frm_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_Pos.Designer.vb">
+      <DependentUpon>Frm_Pos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_Pos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Formularios\Andenes\Andenes.resx">
+      <DependentUpon>Andenes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Auditoria\Frm_Auditoria.resx">
+      <DependentUpon>Frm_Auditoria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Auditoria\Lst_AyudaAuditoria.resx">
+      <DependentUpon>Lst_AyudaAuditoria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Etiquetado\Frm_Etiquetado.resx">
+      <DependentUpon>Frm_Etiquetado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Fotos\frm_ejemplo.resx">
+      <DependentUpon>frm_ejemplo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Imprimir\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Imprimir\ImprimeEtiqueta.resx">
+      <DependentUpon>ImprimeEtiqueta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Informes\PosicionRecepciones.resx">
+      <DependentUpon>PosicionRecepciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IngresoTunel\Frm_IngresoTunel.resx">
+      <DependentUpon>Frm_IngresoTunel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inventario\FrmInventario.resx">
+      <DependentUpon>FrmInventario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inventario\FrmInventario2vb.resx">
+      <DependentUpon>FrmInventario2vb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Posicionamiento\Frm_Pos_Sug.resx">
+      <DependentUpon>Frm_Pos_Sug.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Posicionamiento\Frm_RevisionPosiciones.resx">
+      <DependentUpon>Frm_RevisionPosiciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreDespacho\Frm_buscaClienteParaAND.resx">
+      <DependentUpon>Frm_buscaClienteParaAND.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreDespacho\FrmDespacho.resx">
+      <DependentUpon>FrmDespacho.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreDespacho\Frm_buscaCliente.resx">
+      <DependentUpon>Frm_buscaCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Posicionamiento\Frm_cuenta.resx">
+      <DependentUpon>Frm_cuenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreDespacho\Frm_CajasPedido.resx">
+      <DependentUpon>Frm_CajasPedido.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreDespacho\Frm_EstaEnPedido.resx">
+      <DependentUpon>Frm_EstaEnPedido.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreDespacho\Frm_ListadoPedidos.resx">
+      <DependentUpon>Frm_ListadoPedidos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreDespacho\Frm_PreDespacho.resx">
+      <DependentUpon>Frm_PreDespacho.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales.resx">
+      <DependentUpon>Frm_Pedidos_Locales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Detalle_Local.resx">
+      <DependentUpon>Frm_Pedidos_Locales_Detalle_Local.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Detalle_Pallets.resx">
+      <DependentUpon>Frm_Pedidos_Locales_Detalle_Pallets.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Pallet_Preparar.resx">
+      <DependentUpon>Frm_Pedidos_Locales_Pallet_Preparar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreparacionDespacho\Frm_Pedidos_Locales_Pallet_Trackeo_Preparar.resx">
+      <DependentUpon>Frm_Pedidos_Locales_Pallet_Trackeo_Preparar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreparacionDespacho\Frm_PreparaPicking.resx">
+      <DependentUpon>Frm_PreparaPicking.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreparacionDespacho\Frm_PedidosPendientes.resx">
+      <DependentUpon>Frm_PedidosPendientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recepción\Frm_AdjuntaFotoRecepcion.resx">
+      <DependentUpon>Frm_AdjuntaFotoRecepcion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recepción\Frm_CamionesAndenRecepcion.resx">
+      <DependentUpon>Frm_CamionesAndenRecepcion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recepción\Frm_recepcion.resx">
+      <DependentUpon>Frm_recepcion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recepción\Frm_Temperaturas.resx">
+      <DependentUpon>Frm_Temperaturas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recepción\Lst_AyudaChoferes.resx">
+      <DependentUpon>Lst_AyudaChoferes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recepción\Lst_AyudaClientes.resx">
+      <DependentUpon>Lst_AyudaClientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recepción\Lst_AyudaContratos.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recepción\Lst_AyudaEtiqueta.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recepción\Lst_AyudaOrigenes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recepción\Lst_AyudaProductos.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Recepción\Lst_AyudaSoportantes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Repaletizado\Frm_Repaletiza.resx">
+      <DependentUpon>Frm_Repaletiza.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Revision Traspaso\EstadoPedido.resx">
+      <DependentUpon>EstadoPedido.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Revision Traspaso\Frm_EstadoRevision.resx">
+      <DependentUpon>Frm_EstadoRevision.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Revision Traspaso\Revision_FaR.resx">
+      <DependentUpon>Revision_FaR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Revision Traspaso\Revision_RaF.resx">
+      <DependentUpon>Revision_RaF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Trakeo\Frm_TraqueoService.resx">
+      <DependentUpon>Frm_TraqueoService.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Trakeo\Frm_Columna.resx">
+      <DependentUpon>Frm_Columna.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Trakeo\Frm_PorTraquear.resx">
+      <DependentUpon>Frm_PorTraquear.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Trakeo\Frm_Traqueo.resx">
+      <DependentUpon>Frm_Traqueo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Trakeo\Frm_Traqueo_largo.resx">
+      <DependentUpon>Frm_Traqueo_largo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Inicio.resx">
+      <DependentUpon>Frm_Inicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PreparacionDespacho\Frm_Preparar.resx">
+      <DependentUpon>Frm_Preparar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Menu.resx">
+      <DependentUpon>Frm_Menu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Posicionamiento\Frm_Pos.resx">
+      <DependentUpon>Frm_Pos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Posicionamiento\Frm_trazabilidad.resx">
+      <DependentUpon>Frm_trazabilidad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1384289413_173153.ico" />
+    <Content Include="blanco.png" />
+    <Content Include="Recursos\blanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v3.5'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v3.5'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+</Project>
