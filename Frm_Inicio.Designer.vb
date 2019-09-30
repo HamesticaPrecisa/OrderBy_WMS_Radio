@@ -35,16 +35,18 @@ Partial Public Class Frm_Inicio
         '
         Me.txtusuario.Location = New System.Drawing.Point(42, 84)
         Me.txtusuario.Name = "txtusuario"
-        Me.txtusuario.Size = New System.Drawing.Size(159, 21)
+        Me.txtusuario.Size = New System.Drawing.Size(159, 25)
         Me.txtusuario.TabIndex = 0
+        Me.txtusuario.Text = "mlopez"
         '
         'txtpassword
         '
         Me.txtpassword.Location = New System.Drawing.Point(42, 123)
         Me.txtpassword.Name = "txtpassword"
         Me.txtpassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtpassword.Size = New System.Drawing.Size(159, 21)
+        Me.txtpassword.Size = New System.Drawing.Size(159, 25)
         Me.txtpassword.TabIndex = 1
+        Me.txtpassword.Text = "11609"
         '
         'Label1
         '
