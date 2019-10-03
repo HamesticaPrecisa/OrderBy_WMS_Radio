@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data
+Imports System.Text
 
 Public Class Funciones
 
@@ -8,12 +9,17 @@ Public Class Funciones
     Public Function ListarTablasSQL(ByVal Consulta_sql As String) As DataTable
         Dim tabla As DataTable = New DataTable
         Try
+            lastSQLError = Nothing
             con.conectarSQL()
             Dim Listado As SqlDataAdapter = New SqlDataAdapter(Consulta_sql, con.conSQL)
             Listado.Fill(tabla)
             con.cerrarSQL()
+        Catch ex As SqlException
+            lastSQLError = ex.Message
         Catch ex As Exception
-            '  MsgBox(ex.ToString())
+            lastSQLError = ex.Message
+        Finally
+            If con.conSQL.State = ConnectionState.Open Then con.cerrarSQL()
         End Try
         Return tabla
     End Function
@@ -24,6 +30,7 @@ Public Class Funciones
     Public Function ListarTablasSQL(ByVal Consulta_sql As String, ByVal parameters() As SqlParameter) As DataTable
         Dim tabla As DataTable = New DataTable
         Try
+            lastSQLError = Nothing
             con.conectarSQL()
             Dim Listado As SqlDataAdapter = New SqlDataAdapter(Consulta_sql, con.conSQL)
 
@@ -32,11 +39,16 @@ Public Class Funciones
                 Listado.SelectCommand.Parameters.Add(param)
             Next
             Listado.Fill(tabla)
-
-
             con.cerrarSQL()
+
+        Catch ex As SqlException
+            lastSQLError = ex.Message
+
         Catch ex As Exception
-            MsgBox(ex.Message())
+            lastSQLError = ex.Message
+
+        Finally
+            If con.conSQL.State = ConnectionState.Open Then con.cerrarSQL()
         End Try
         'retornar tabla con datos
         Return tabla
@@ -89,10 +101,12 @@ Public Class Funciones
             retorno = 1
 
 
+        Catch ex As SqlException
+            retorno = 0
+            lastSQLError = ex.Message
         Catch ex As Exception
             retorno = 0
             lastSQLError = ex.Message
-            'MsgBox(ex.Message())
         Finally
             If con.conSQL.State = ConnectionState.Open Then
                 con.cerrarSQL()
@@ -162,6 +176,9 @@ Public Class Funciones
             End If
         End If
         Return result
+    End Function
+    Public Function sqlExecuteRow(ByVal sqlSelect As String) As DataRow
+        Return sqlExecuteRow(sqlSelect, New SqlParameter() {})
     End Function
 
     Public Function MovimientoSQLEtiquetado(ByVal Consulta_sql As String) As Integer
@@ -462,5 +479,28 @@ Public Class Funciones
     End Function
 
 
+    ' VES Sep 2019
+    Private Declare Function GetDeviceUniqueID Lib "coredll.dll" _
+         (ByVal appData As Byte(), _
+          ByVal cbApplictionData As Integer, _
+          ByVal dwDeviceIDVersion As Integer, _
+          ByVal deviceIDOutput As Byte(), _
+          ByRef pcbDeviceIDOutput As Integer) As Integer
+
+    Public Function GetDeviceID(ByVal AppString As String) As String
+        Dim AppData As Byte() = System.Text.Encoding.Unicode.GetBytes(AppString)
+        Dim appDataSize As Integer = AppData.Length
+        Dim DeviceOutput As Byte() = New Byte(19) {}
+        Dim SizeOut As Integer = 20
+        GetDeviceUniqueID(AppData, appDataSize, 1, DeviceOutput, SizeOut)
+        Dim pcid As StringBuilder = New StringBuilder()
+        For i As Integer = 0 To DeviceOutput.Length - 1
+            If i Mod 2 = 0 AndAlso i > 0 Then pcid.Append("-"c)
+            Dim token As String = CerosAnteriorString(DeviceOutput(i).ToString("X"), 2)
+            pcid.Append(token)
+        Next
+
+        Return pcid.ToString()
+    End Function
 
 End Class

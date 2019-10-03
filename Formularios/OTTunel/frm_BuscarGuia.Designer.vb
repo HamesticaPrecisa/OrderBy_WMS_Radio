@@ -19,14 +19,16 @@ Partial Public Class frm_BuscarGuia
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridTextBoxColumn3 As System.Windows.Forms.DataGridTextBoxColumn
         Me.btn_ok = New System.Windows.Forms.Button
         Me.Btn_salir = New System.Windows.Forms.Button
         Me.DataGrid1 = New System.Windows.Forms.DataGrid
         Me.Titulo = New System.Windows.Forms.DataGridTableStyle
-        Me.txtbusca = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
         Me.DataGridTextBoxColumn1 = New System.Windows.Forms.DataGridTextBoxColumn
         Me.DataGridTextBoxColumn2 = New System.Windows.Forms.DataGridTextBoxColumn
+        Me.txtbusca = New System.Windows.Forms.TextBox
+        Me.Label1 = New System.Windows.Forms.Label
+        DataGridTextBoxColumn3 = New System.Windows.Forms.DataGridTextBoxColumn
         Me.SuspendLayout()
         '
         'btn_ok
@@ -60,20 +62,7 @@ Partial Public Class frm_BuscarGuia
         '
         Me.Titulo.GridColumnStyles.Add(Me.DataGridTextBoxColumn1)
         Me.Titulo.GridColumnStyles.Add(Me.DataGridTextBoxColumn2)
-        '
-        'txtbusca
-        '
-        Me.txtbusca.Location = New System.Drawing.Point(60, 8)
-        Me.txtbusca.Name = "txtbusca"
-        Me.txtbusca.Size = New System.Drawing.Size(174, 25)
-        Me.txtbusca.TabIndex = 7
-        '
-        'Label1
-        '
-        Me.Label1.Location = New System.Drawing.Point(3, 10)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 20)
-        Me.Label1.Text = "Buscar"
+        Me.Titulo.GridColumnStyles.Add(DataGridTextBoxColumn3)
         '
         'DataGridTextBoxColumn1
         '
@@ -90,6 +79,26 @@ Partial Public Class frm_BuscarGuia
         Me.DataGridTextBoxColumn2.HeaderText = "Cliente"
         Me.DataGridTextBoxColumn2.MappingName = "cli_nomb"
         Me.DataGridTextBoxColumn2.Width = 250
+        '
+        'txtbusca
+        '
+        Me.txtbusca.Location = New System.Drawing.Point(60, 8)
+        Me.txtbusca.Name = "txtbusca"
+        Me.txtbusca.Size = New System.Drawing.Size(174, 25)
+        Me.txtbusca.TabIndex = 7
+        '
+        'Label1
+        '
+        Me.Label1.Location = New System.Drawing.Point(3, 10)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(51, 20)
+        Me.Label1.Text = "Buscar"
+        '
+        'DataGridTextBoxColumn3
+        '
+        DataGridTextBoxColumn3.Format = ""
+        DataGridTextBoxColumn3.FormatInfo = Nothing
+        DataGridTextBoxColumn3.MappingName = "frec_unica"
         '
         'frm_BuscarGuia
         '

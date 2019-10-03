@@ -203,6 +203,12 @@
     <Compile Include="Formularios\OTTunel\frm_BuscarGuia.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\OTTunel\frm_DetOTTunel.Designer.vb">
+      <DependentUpon>frm_DetOTTunel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\OTTunel\frm_DetOTTunel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\OTTunel\Frm_OTTunel.Designer.vb">
       <DependentUpon>Frm_OTTunel.vb</DependentUpon>
     </Compile>
@@ -503,6 +509,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\OTTunel\frm_BuscarGuia.resx">
       <DependentUpon>frm_BuscarGuia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\OTTunel\frm_DetOTTunel.resx">
+      <DependentUpon>frm_DetOTTunel.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\OTTunel\Frm_OTTunel.resx">

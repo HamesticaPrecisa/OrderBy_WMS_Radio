@@ -19,7 +19,7 @@ Partial Public Class Frm_OTTunel
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button
+        Me.cmdDescartar = New System.Windows.Forms.Button
         Me.Label1 = New System.Windows.Forms.Label
         Me.PictureBox3 = New System.Windows.Forms.PictureBox
         Me.cboTunel = New System.Windows.Forms.ComboBox
@@ -39,13 +39,16 @@ Partial Public Class Frm_OTTunel
         Me.cmdOk = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
-        'Button1
+        'cmdDescartar
         '
-        Me.Button1.Location = New System.Drawing.Point(3, 271)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 20)
-        Me.Button1.TabIndex = 116
-        Me.Button1.Text = "Salir"
+        Me.cmdDescartar.BackColor = System.Drawing.Color.Red
+        Me.cmdDescartar.ForeColor = System.Drawing.Color.White
+        Me.cmdDescartar.Location = New System.Drawing.Point(3, 271)
+        Me.cmdDescartar.Name = "cmdDescartar"
+        Me.cmdDescartar.Size = New System.Drawing.Size(99, 20)
+        Me.cmdDescartar.TabIndex = 116
+        Me.cmdDescartar.Text = "Descartar"
+        Me.cmdDescartar.Visible = False
         '
         'Label1
         '
@@ -216,13 +219,13 @@ Partial Public Class Frm_OTTunel
         Me.Controls.Add(Me.cboTunel)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.cmdDescartar)
         Me.Name = "Frm_OTTunel"
         Me.Text = "O/T Túnel"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents cmdDescartar As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents cboTunel As System.Windows.Forms.ComboBox
