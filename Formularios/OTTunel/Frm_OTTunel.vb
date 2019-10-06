@@ -6,11 +6,13 @@ Public Class Frm_OTTunel
 
     Dim fnc As New Funciones
     Dim frec_unica As Object
+    Dim frec_codi As String
+    Dim frec_guiades As String
+    Dim cli_nomb As String
+    Dim frec_maxpallets As Integer
     Dim ot As DataRow = Nothing
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdDescartar.Click
-        Me.Close()
-    End Sub
+
 
     Private Sub Frm_OTTunel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ' Cargamos la lista de tuneles
@@ -21,7 +23,7 @@ Public Class Frm_OTTunel
         cboTunel.DataSource = tuneles
         cboTunel.DisplayMember = "cam_descr"
         cboTunel.ValueMember = "cam_unica"
-        cboTunel.Text = "SELECCIONAR"
+
 
         ' Cargamos la lista de mercados
         Dim mercados As DataTable = fnc.ListarTablasSQL("SELECT mer_id, mer_nombre " & _
@@ -31,7 +33,7 @@ Public Class Frm_OTTunel
         cboMercado.DataSource = mercados
         cboMercado.DisplayMember = "mer_nombre"
         cboMercado.ValueMember = "mer_id"
-        cboMercado.Text = "SELECCIONAR"
+
 
 
         ' Se inicializan otros elementos de la UI
@@ -47,32 +49,44 @@ Public Class Frm_OTTunel
 
 
         ' Verificamos si el radio tiene una OT de tunel en borrador.
-        ot = fnc.sqlExecuteRow("SELECT a.ott_id, a.ott_numero, a.cam_unica, a.frec_unica, b.frec_codi, c.cli_nomb, a.mer_id, a.ott_alcance, a.ott_numpallets, " & _
-                               "       ISNULL((SELECT COUNT(*) FROM det_ots_tunel WHERE ott_id = a.ott_id), 0) AS numlineas " & _
+        ot = fnc.sqlExecuteRow("SELECT a.ott_id, a.ott_numero, a.cam_unica, a.frec_unica, b.frec_guiades, b.frec_codi, c.cli_nomb, a.mer_id, a.ott_alcance, a.ott_numpallets, d.mer_nombre, " & _
+                               "       ISNULL((SELECT COUNT(*) FROM det_ots_tunel WHERE ott_id = a.ott_id), 0) AS picked, " & _
+                               "       ISNULL((SELECT COUNT(*) FROM detarece WHERE frec_codi1 = b.frec_codi), 0) AS numpallets " & _
                                "  FROM ots_tunel a " & _
                                "  LEFT JOIN fichrece b ON b.frec_unica = a.frec_unica " & _
                                "  LEFT JOIN clientes c ON c.cli_rut = b.frec_rutcli" & _
-                               " WHERE a.ott_deviceid = @deviceid", _
+                               "  LEFT JOIN mercados d ON d.mer_id = a.mer_id " & _
+                               " WHERE a.ott_deviceid = @deviceid " & _
+                               "   AND a.ott_status NOT IN ('FINALIZADA','CERRADA','ANULADA')", _
                                New SqlParameter() {New SqlParameter("@deviceid", SqlDbType.VarChar) With {.Value = deviceId}})
-        If ot IsNot Nothing Then
+        If ot Is Nothing Then
+            cboTunel.Text = "SELECCIONAR"
+            cboMercado.Text = "SELECCIONAR"
+        Else
             cboTunel.SelectedValue = ot("cam_unica")
             txtGuia.Text = ot("frec_codi").ToString().Trim()
             lblCliente.Text = ot("cli_nomb").ToString().Trim()
             frec_unica = ot("frec_unica")
-            cboMercado.SelectedValue = ot("mer_id").ToString()
+            frec_codi = ot("frec_codi").ToString()
+            frec_guiades = ot("frec_guiades").ToString()
+            cli_nomb = ot("cli_nomb").ToString()
+            frec_maxpallets = If(CInt(ot("ott_alcance").ToString()) = 0, CInt(ot("numpallets").ToString()), CInt(ot("ott_maxpallets").ToString()))
+            cboMercado.SelectedValue = CInt(ot("mer_id").ToString())
             If CInt(ot("ott_alcance").ToString()) = 1 Then rbtParcial.Checked = True
             txtMaxPallets.Text = ot("ott_numpallets").ToString()
             cmdOk.Text = "Continuar"
             cmdDescartar.Visible = True
 
+
             ' Si la OT ya tiene lineas cargadas, no se permite cambiar nada mas que el mercado
-            If (CInt(ot("numlineas").ToString()) > 0) Then
+            If (CInt(ot("picked").ToString()) > 0) Then
                 cboTunel.Enabled = False
                 txtGuia.Enabled = False
                 btn_buscarGuia.Enabled = False
                 rbtTodos.Enabled = False
                 rbtParcial.Enabled = False
                 txtMaxPallets.Enabled = False
+                btn_buscarGuia.Enabled = False
             End If
         End If
     End Sub
@@ -97,7 +111,10 @@ Public Class Frm_OTTunel
     End Sub
 
     Private Function validarGuia(ByVal guia As String) As Boolean
-        Dim row As DataRow = fnc.sqlExecuteRow("SELECT frec_codi, frec_fecrec, cli_nomb, frec_unica" & _
+        '
+        ' VERIFICAMOS QUE LA GUIA EXISTA
+        '
+        Dim row As DataRow = fnc.sqlExecuteRow("SELECT frec_codi, frec_fecrec, cli_nomb, frec_unica " & _
                                                "  FROM fichrece " & _
                                                "  LEFT JOIN clientes ON cli_rut = frec_rutcli " & _
                                                " WHERE frec_guiades = @guia", _
@@ -109,8 +126,28 @@ Public Class Frm_OTTunel
             Return False
         End If
 
-        lblCliente.Text = row("cli_nomb").ToString().Trim()
+
         frec_unica = row("frec_unica").ToString()
+        frec_codi = row("frec_codi").ToString()
+        frec_guiades = guia
+        cli_nomb = row("cli_nomb").ToString().Trim()
+        lblCliente.Text = cli_nomb
+
+        '
+        ' DETERMINAMOS LA CANTIDAD DE PALLETS NO ASOCIADOS 
+        ' A OT QUE TIENE LA GUIA
+        '
+        row = fnc.sqlExecuteRow("SELECT COUNT(*) AS maxpallets " & _
+                                "  FROM detarece a " & _
+                                " WHERE frec_codi1 = @frec_codi " & _
+                                "   AND drec_codi NOT IN (SELECT drec_codi FROM det_ots_tunel WHERE ott_id <> @ott_id)", _
+                                New SqlParameter() { _
+                                    New SqlParameter("@frec_codi", SqlDbType.VarChar) With {.Value = frec_codi}, _
+                                    New SqlParameter("@ott_id", SqlDbType.Int) With {.Value = CInt(ot("ott_id").ToString())} _
+                                })
+        frec_maxpallets = CInt(row("maxpallets").ToString())
+        txtMaxPallets.Text = frec_maxpallets.ToString()
+
         Return True
     End Function
 
@@ -127,8 +164,7 @@ Public Class Frm_OTTunel
         frm.ShowDialog()
         If frm.frec_guiades.Length > 0 Then
             txtGuia.Text = frm.frec_guiades
-            lblCliente.Text = frm.cli_nomb
-            frec_unica = frm.frec_unica
+            validarGuia(frm.frec_guiades)
             cboMercado.Focus()
         End If
     End Sub
@@ -151,6 +187,13 @@ Public Class Frm_OTTunel
             txtMaxPallets.Focus()
             Return
         End If
+
+        If rbtParcial.Checked And CInt("0" & txtMaxPallets.Text) > frec_maxpallets Then
+            MessageBox.Show("La cantidad de pallets no puede ser mayor a " + frec_maxpallets.ToString(), "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1)
+            txtMaxPallets.Focus()
+            Return
+        End If
+
 
         Dim idot As Integer
         Dim numot As String
@@ -198,10 +241,36 @@ Public Class Frm_OTTunel
             Dim frm As frm_DetOTTunel = New frm_DetOTTunel()
             frm.ott_id = idot
             frm.ott_numero = numot
+            frm.ott_maxpallets = frec_maxpallets
+            frm.frec_guiades = frec_guiades
+            frm.frec_codi = frec_codi
+            frm.cli_nomb = cli_nomb
             frm.ShowDialog()
         Else
             MessageBox.Show(lastSQLError, "Cuidado", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1)
         End If
 
+    End Sub
+
+    Private Sub cmdDescartar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdDescartar.Click
+        If MessageBox.Show("Descartar esta OT?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
+            Return
+        End If
+        Dim sql1 As String = "UPDATE ots_tunel SET ott_status = 'ANULADA' WHERE ott_id = @ott_id"
+        Dim sql2 As String = "DELETE FROM det_ots_tunel WHERE ott_id = @ott_id"
+        Dim idot As Integer = CInt(ot("ott_id").ToString())
+        If fnc.MovimientoSQL(sql1, New SqlParameter() {New SqlParameter("@ott_id", SqlDbType.Int) With {.Value = idot}}) = 0 Or _
+           fnc.MovimientoSQL(sql2, New SqlParameter() {New SqlParameter("@ott_id", SqlDbType.Int) With {.Value = idot}}) = 0 Then
+            MessageBox.Show(lastSQLError, "Cuidado", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1)
+            Return
+        End If
+
+        Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        cboMercado.SelectedValue = 3
+
+        MessageBox.Show("VALUE: " + cboMercado.SelectedIndex.ToString() + " " + cboMercado.SelectedValue.ToString() + " " + cboMercado.Text, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.None, MessageBoxDefaultButton.Button1)
     End Sub
 End Class

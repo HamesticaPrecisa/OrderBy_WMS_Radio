@@ -43,9 +43,9 @@ Partial Public Class Frm_OTTunel
         '
         Me.cmdDescartar.BackColor = System.Drawing.Color.Red
         Me.cmdDescartar.ForeColor = System.Drawing.Color.White
-        Me.cmdDescartar.Location = New System.Drawing.Point(3, 271)
+        Me.cmdDescartar.Location = New System.Drawing.Point(3, 257)
         Me.cmdDescartar.Name = "cmdDescartar"
-        Me.cmdDescartar.Size = New System.Drawing.Size(99, 20)
+        Me.cmdDescartar.Size = New System.Drawing.Size(100, 34)
         Me.cmdDescartar.TabIndex = 116
         Me.cmdDescartar.Text = "Descartar"
         Me.cmdDescartar.Visible = False
@@ -190,9 +190,9 @@ Partial Public Class Frm_OTTunel
         '
         'cmdOk
         '
-        Me.cmdOk.Location = New System.Drawing.Point(157, 271)
+        Me.cmdOk.Location = New System.Drawing.Point(137, 257)
         Me.cmdOk.Name = "cmdOk"
-        Me.cmdOk.Size = New System.Drawing.Size(80, 20)
+        Me.cmdOk.Size = New System.Drawing.Size(100, 34)
         Me.cmdOk.TabIndex = 146
         Me.cmdOk.Text = "Aceptar"
         '

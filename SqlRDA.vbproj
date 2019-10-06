@@ -215,6 +215,12 @@
     <Compile Include="Formularios\OTTunel\Frm_OTTunel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\OTTunel\frm_PickOTTUnel.Designer.vb">
+      <DependentUpon>frm_PickOTTUnel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\OTTunel\frm_PickOTTUnel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Posicionamiento\Frm_Pos_Sug.Designer.vb">
       <DependentUpon>Frm_Pos_Sug.vb</DependentUpon>
     </Compile>
@@ -517,6 +523,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\OTTunel\Frm_OTTunel.resx">
       <DependentUpon>Frm_OTTunel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\OTTunel\frm_PickOTTUnel.resx">
+      <DependentUpon>frm_PickOTTUnel.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Posicionamiento\Frm_Pos_Sug.resx">

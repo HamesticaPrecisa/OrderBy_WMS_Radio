@@ -92,3 +92,9 @@ Y:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.Frm_Menu.resources
 Y:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.frm_Pos.resources
 Y:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.Frm_trazabilidad.resources
 Y:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.vbproj.GenerateResource.Cache
+Y:\Work\Fuentes\NOI\DEV\ptech\radio\bin\Release\SqlRDA.exe
+Y:\Work\Fuentes\NOI\DEV\ptech\radio\bin\Release\System.Data.SqlClient.dll
+Y:\Work\Fuentes\NOI\DEV\ptech\radio\bin\Release\System.Data.SqlServerCe.dll
+Y:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.frm_DetOTTunel.resources
+Y:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.frm_Pos2.resources
+Y:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.exe
