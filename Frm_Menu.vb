@@ -13,7 +13,7 @@
 
 
     Private Sub Menu_pos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles m_78.Click
-        Dim f As New frm_Pos
+        Dim f As New Frm_PosNew
         f.usuario = Me.usuario
         f.cargo = Me.cargo
         f.perfil = Me.perfil
@@ -360,6 +360,7 @@
 
 
     Private Sub m_201_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles m_201.Click
+        Cursor.Current = Cursors.WaitCursor
         Dim frm As New Frm_OTTunel
         frm.ShowDialog()
     End Sub

@@ -874,3 +874,8 @@ Y:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Debug\SqlRDA.Frm_OTTunel.resources
 Y:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Debug\SqlRDA.frm_BuscarGuia.resources
 Y:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Debug\SqlRDA.frm_DetOTTunel.resources
 Y:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Debug\SqlRDA.frm_PickOTTUnel.resources
+Z:\Work\Fuentes\NOI\dev\ptech\radio\obj\Debug\SqlRDA.frm_BuscarGuia.resources
+Z:\Work\Fuentes\NOI\dev\ptech\radio\obj\Debug\SqlRDA.frm_DetOTTunel.resources
+Z:\Work\Fuentes\NOI\dev\ptech\radio\obj\Debug\SqlRDA.Frm_OTTunel.resources
+Z:\Work\Fuentes\NOI\dev\ptech\radio\obj\Debug\SqlRDA.frm_PickOTTUnel.resources
+Z:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Debug\SqlRDA.Frm_PosNew.resources

@@ -37,18 +37,18 @@ Partial Public Class Frm_OTTunel
         Me.rbtParcial = New System.Windows.Forms.RadioButton
         Me.txtMaxPallets = New System.Windows.Forms.TextBox
         Me.cmdOk = New System.Windows.Forms.Button
+        Me.btnSalir = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'cmdDescartar
         '
         Me.cmdDescartar.BackColor = System.Drawing.Color.Red
         Me.cmdDescartar.ForeColor = System.Drawing.Color.White
-        Me.cmdDescartar.Location = New System.Drawing.Point(3, 257)
+        Me.cmdDescartar.Location = New System.Drawing.Point(5, 219)
         Me.cmdDescartar.Name = "cmdDescartar"
-        Me.cmdDescartar.Size = New System.Drawing.Size(100, 34)
+        Me.cmdDescartar.Size = New System.Drawing.Size(115, 34)
         Me.cmdDescartar.TabIndex = 116
         Me.cmdDescartar.Text = "Descartar"
-        Me.cmdDescartar.Visible = False
         '
         'Label1
         '
@@ -190,11 +190,20 @@ Partial Public Class Frm_OTTunel
         '
         'cmdOk
         '
-        Me.cmdOk.Location = New System.Drawing.Point(137, 257)
+        Me.cmdOk.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmdOk.Location = New System.Drawing.Point(124, 219)
         Me.cmdOk.Name = "cmdOk"
-        Me.cmdOk.Size = New System.Drawing.Size(100, 34)
+        Me.cmdOk.Size = New System.Drawing.Size(115, 72)
         Me.cmdOk.TabIndex = 146
         Me.cmdOk.Text = "Aceptar"
+        '
+        'btnSalir
+        '
+        Me.btnSalir.Location = New System.Drawing.Point(5, 257)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(115, 34)
+        Me.btnSalir.TabIndex = 156
+        Me.btnSalir.Text = "Salir"
         '
         'Frm_OTTunel
         '
@@ -202,6 +211,7 @@ Partial Public Class Frm_OTTunel
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(240, 294)
+        Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.cmdOk)
         Me.Controls.Add(Me.txtMaxPallets)
         Me.Controls.Add(Me.rbtParcial)
@@ -243,4 +253,5 @@ Partial Public Class Frm_OTTunel
     Friend WithEvents rbtParcial As System.Windows.Forms.RadioButton
     Friend WithEvents txtMaxPallets As System.Windows.Forms.TextBox
     Friend WithEvents cmdOk As System.Windows.Forms.Button
+    Friend WithEvents btnSalir As System.Windows.Forms.Button
 End Class

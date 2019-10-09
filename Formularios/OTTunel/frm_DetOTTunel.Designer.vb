@@ -27,12 +27,12 @@ Partial Public Class frm_DetOTTunel
         Me.DataGridTextBoxColumn4 = New System.Windows.Forms.DataGridTextBoxColumn
         Me.DataGridTextBoxColumn5 = New System.Windows.Forms.DataGridTextBoxColumn
         Me.DataGridTextBoxColumn6 = New System.Windows.Forms.DataGridTextBoxColumn
-        Me.btnEliminar = New System.Windows.Forms.Button
         Me.btnAgregar = New System.Windows.Forms.Button
-        Me.btnFinalizar = New System.Windows.Forms.Button
         Me.lblCount = New System.Windows.Forms.Label
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.lblInfoOT = New System.Windows.Forms.Label
+        Me.cmdDescartar = New System.Windows.Forms.Button
+        Me.btnSalir = New System.Windows.Forms.Button
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,7 +41,7 @@ Partial Public Class frm_DetOTTunel
         Me.DataGrid1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.DataGrid1.Location = New System.Drawing.Point(0, 44)
         Me.DataGrid1.Name = "DataGrid1"
-        Me.DataGrid1.Size = New System.Drawing.Size(240, 167)
+        Me.DataGrid1.Size = New System.Drawing.Size(240, 168)
         Me.DataGrid1.TabIndex = 0
         Me.DataGrid1.TableStyles.Add(Me.DataGridTableStyle1)
         '
@@ -59,7 +59,7 @@ Partial Public Class frm_DetOTTunel
         Me.DataGridTextBoxColumn1.Format = ""
         Me.DataGridTextBoxColumn1.FormatInfo = Nothing
         Me.DataGridTextBoxColumn1.HeaderText = "Pallet"
-        Me.DataGridTextBoxColumn1.MappingName = "drec_codi"
+        Me.DataGridTextBoxColumn1.MappingName = "racd_codi"
         Me.DataGridTextBoxColumn1.Width = 90
         '
         'DataGridTextBoxColumn2
@@ -67,7 +67,7 @@ Partial Public Class frm_DetOTTunel
         Me.DataGridTextBoxColumn2.Format = ""
         Me.DataGridTextBoxColumn2.FormatInfo = Nothing
         Me.DataGridTextBoxColumn2.HeaderText = "CA"
-        Me.DataGridTextBoxColumn2.MappingName = "dot_ca"
+        Me.DataGridTextBoxColumn2.MappingName = "racd_ca"
         Me.DataGridTextBoxColumn2.Width = 25
         '
         'DataGridTextBoxColumn3
@@ -75,7 +75,7 @@ Partial Public Class frm_DetOTTunel
         Me.DataGridTextBoxColumn3.Format = ""
         Me.DataGridTextBoxColumn3.FormatInfo = Nothing
         Me.DataGridTextBoxColumn3.HeaderText = "BA"
-        Me.DataGridTextBoxColumn3.MappingName = "dot_ba"
+        Me.DataGridTextBoxColumn3.MappingName = "racd_ba"
         Me.DataGridTextBoxColumn3.Width = 25
         '
         'DataGridTextBoxColumn4
@@ -83,7 +83,7 @@ Partial Public Class frm_DetOTTunel
         Me.DataGridTextBoxColumn4.Format = ""
         Me.DataGridTextBoxColumn4.FormatInfo = Nothing
         Me.DataGridTextBoxColumn4.HeaderText = "CO"
-        Me.DataGridTextBoxColumn4.MappingName = "dot_co"
+        Me.DataGridTextBoxColumn4.MappingName = "racd_co"
         Me.DataGridTextBoxColumn4.Width = 25
         '
         'DataGridTextBoxColumn5
@@ -91,7 +91,7 @@ Partial Public Class frm_DetOTTunel
         Me.DataGridTextBoxColumn5.Format = ""
         Me.DataGridTextBoxColumn5.FormatInfo = Nothing
         Me.DataGridTextBoxColumn5.HeaderText = "PI"
-        Me.DataGridTextBoxColumn5.MappingName = "dot_pi"
+        Me.DataGridTextBoxColumn5.MappingName = "racd_pi"
         Me.DataGridTextBoxColumn5.Width = 25
         '
         'DataGridTextBoxColumn6
@@ -99,34 +99,17 @@ Partial Public Class frm_DetOTTunel
         Me.DataGridTextBoxColumn6.Format = ""
         Me.DataGridTextBoxColumn6.FormatInfo = Nothing
         Me.DataGridTextBoxColumn6.HeaderText = "NI"
-        Me.DataGridTextBoxColumn6.MappingName = "dot_ni"
+        Me.DataGridTextBoxColumn6.MappingName = "racd_ni"
         Me.DataGridTextBoxColumn6.Width = 25
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.BackColor = System.Drawing.Color.Red
-        Me.btnEliminar.ForeColor = System.Drawing.Color.White
-        Me.btnEliminar.Location = New System.Drawing.Point(3, 217)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(110, 34)
-        Me.btnEliminar.TabIndex = 1
-        Me.btnEliminar.Text = "Eliminar"
         '
         'btnAgregar
         '
-        Me.btnAgregar.Location = New System.Drawing.Point(124, 217)
+        Me.btnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnAgregar.Location = New System.Drawing.Point(122, 218)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(110, 34)
+        Me.btnAgregar.Size = New System.Drawing.Size(115, 73)
         Me.btnAgregar.TabIndex = 2
-        Me.btnAgregar.Text = "Agregar"
-        '
-        'btnFinalizar
-        '
-        Me.btnFinalizar.Location = New System.Drawing.Point(124, 257)
-        Me.btnFinalizar.Name = "btnFinalizar"
-        Me.btnFinalizar.Size = New System.Drawing.Size(110, 34)
-        Me.btnFinalizar.TabIndex = 4
-        Me.btnFinalizar.Text = "Finalizar"
+        Me.btnAgregar.Text = "Posicionar"
         '
         'lblCount
         '
@@ -136,7 +119,7 @@ Partial Public Class frm_DetOTTunel
         Me.lblCount.Location = New System.Drawing.Point(9, 23)
         Me.lblCount.Name = "lblCount"
         Me.lblCount.Size = New System.Drawing.Size(215, 20)
-        Me.lblCount.Text = "0 pallets de 0 - 0 faltantes"
+        Me.lblCount.Text = "Tunel 00 - 0/0 - 0 falt"
         '
         'Panel1
         '
@@ -155,18 +138,36 @@ Partial Public Class frm_DetOTTunel
         Me.lblInfoOT.Size = New System.Drawing.Size(400, 20)
         Me.lblInfoOT.Text = "000000 - Nombre del cliente"
         '
+        'cmdDescartar
+        '
+        Me.cmdDescartar.BackColor = System.Drawing.Color.Red
+        Me.cmdDescartar.ForeColor = System.Drawing.Color.White
+        Me.cmdDescartar.Location = New System.Drawing.Point(3, 218)
+        Me.cmdDescartar.Name = "cmdDescartar"
+        Me.cmdDescartar.Size = New System.Drawing.Size(115, 34)
+        Me.cmdDescartar.TabIndex = 117
+        Me.cmdDescartar.Text = "Descartar"
+        '
+        'btnSalir
+        '
+        Me.btnSalir.Location = New System.Drawing.Point(3, 257)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(115, 34)
+        Me.btnSalir.TabIndex = 157
+        Me.btnSalir.Text = "Salir"
+        '
         'frm_DetOTTunel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(240, 294)
+        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.cmdDescartar)
         Me.Controls.Add(Me.DataGrid1)
         Me.Controls.Add(Me.lblCount)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.btnFinalizar)
         Me.Controls.Add(Me.btnAgregar)
-        Me.Controls.Add(Me.btnEliminar)
         Me.Name = "frm_DetOTTunel"
         Me.Text = "OT #"
         Me.Panel1.ResumeLayout(False)
@@ -174,9 +175,7 @@ Partial Public Class frm_DetOTTunel
 
     End Sub
     Friend WithEvents DataGrid1 As System.Windows.Forms.DataGrid
-    Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents btnAgregar As System.Windows.Forms.Button
-    Friend WithEvents btnFinalizar As System.Windows.Forms.Button
     Friend WithEvents lblCount As System.Windows.Forms.Label
     Friend WithEvents DataGridTableStyle1 As System.Windows.Forms.DataGridTableStyle
     Friend WithEvents DataGridTextBoxColumn1 As System.Windows.Forms.DataGridTextBoxColumn
@@ -187,4 +186,6 @@ Partial Public Class frm_DetOTTunel
     Friend WithEvents DataGridTextBoxColumn6 As System.Windows.Forms.DataGridTextBoxColumn
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lblInfoOT As System.Windows.Forms.Label
+    Friend WithEvents cmdDescartar As System.Windows.Forms.Button
+    Friend WithEvents btnSalir As System.Windows.Forms.Button
 End Class

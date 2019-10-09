@@ -1,14 +1,20 @@
-﻿Imports System.Data.SqlClient
-
-' 
-' ESTE FORMULARIO SE BASA EN FRM_POS PERO
-' ADAPTADO AL PICKING DE OTS TUNEL
+﻿'
+' ESTA FORM SUPLANTA A FRM_POS DEBIDO A QUE ESTE ULTIMO
+' CAUSABA UN CRASH EN EL EMULADOR, POR ALGUNA RAZON 
+' DESCONOCIDA.
 '
-Public Class frm_PickOTTUnel
+' ESTE FORM ES UNA COPIA EXACTA DE FRM_POS
+'
+' VES SEP 2019
+'
+Imports System.Data.SqlClient
+
+Public Class Frm_PosNew
 
     Dim fnc As New Funciones
     Dim con As New Conexion
     Dim TIPOALAMACEN As String = ""
+
     Dim camara As String = ""
     Dim banda As String = ""
     Dim columna As String = ""
@@ -24,16 +30,38 @@ Public Class frm_PickOTTUnel
 
     Public accion As Integer = 0
 
-    Public frec_codi As String = ""
-    Public frec_guiades As String = ""
-    Public cli_nomb As String = ""
-    Public cam_codi As String = ""
-    Public cam_descr As String = ""
-    Public ott_numero As String = ""
-    Public ott_id As Integer = 0
-    Public picked As Integer = 0
-    Public max_pallets As Integer = 0
+    Function DigitoVerificador(ByVal numero As String) As Integer
 
+
+        Dim separado(12) As String
+        Dim valores(12) As Integer
+
+        Dim suma As Integer = 0
+
+        For i As Integer = 0 To numero.Length - 1
+            separado(i) = numero.Chars(i)
+        Next
+
+        For i As Integer = 0 To separado.Length - 1
+            If i Mod 2 = 0 Then
+                suma = Convert.ToInt32(suma + (Val(separado(i)) * 1))
+            Else
+                suma = Convert.ToInt32(suma + (Val(separado(i)) * 3))
+            End If
+        Next
+
+        Dim multiplo As Integer = 0
+
+        For i As Integer = 0 To suma Step 10
+            multiplo = multiplo + 10
+        Next
+
+        Dim verificador As Integer = multiplo - suma
+
+        'txtposicion.Text = numero + "" + verificador.ToString()
+        txtposicion.Focus()
+        Return verificador
+    End Function
 
     Public Function TransformaPallet(ByVal pallet As String) As String
 
@@ -112,6 +140,7 @@ Public Class frm_PickOTTUnel
                         retorno = 0
                     Else
                         lmensaje.Text = "Posición ocupada por el pallet Nº " + tabla.Rows(0)(1).ToString()
+                        BtnLiberar.Visible = True
                         codigo_pallet = tabla.Rows(0)(1).ToString()
                         retorno = 1
                     End If
@@ -123,11 +152,25 @@ Public Class frm_PickOTTUnel
 
         Return retorno
     End Function
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        '---->
+        Dim sql As String = "SELECT pos_camara, pos_banda, pos_nivel WHERE pos_codigo='" + txtposicion.Text + "'"
+        Dim tabla As DataTable = fnc.ListarTablasSQL(sql)
+        If tabla.Rows.Count > 0 Then
+            txtcamara.Text = tabla.Rows(0)(0).ToString()
+            txtbanda.Text = tabla.Rows(0)(1).ToString()
+            txtcolumna.Text = tabla.Rows(0)(2).ToString()
+        End If
+        '---->
+    End Sub
+
     Private Sub borratemp()
 
         Dim sqlEliminas As String = "DELETE FROM TMP_POS WHERE pallet='" + txtpalet.Text + "'"
         fnc.MovimientoSQL(sqlEliminas)
     End Sub
+
     Private Sub temporalposicion()
 
         Dim qry As String = "INSERT INTO TMP_POS(pallet,fechareg ,encargado)VALUES ('" + txtpalet.Text + "',GETDATE(),'" + encargado_global + "')"
@@ -136,6 +179,7 @@ Public Class frm_PickOTTUnel
 
 
     End Sub
+
     Function valida_posiciones_bloqueadas() As Boolean
         Dim BLOQUEADA As Boolean = False
 
@@ -317,57 +361,90 @@ Public Class frm_PickOTTUnel
 
     End Function
 
-    Private Sub refreshPickCount()
-        lblCount.Text = String.Format("{0} - {1}/{2} - {3} falt", cam_descr, picked, max_pallets, max_pallets - picked)
-        Panel1.BackColor = If(picked < max_pallets, Color.Red, Color.DarkGreen)
-        lblCount.BackColor = Panel1.BackColor
 
-    End Sub
 
     Private Sub txtpalet_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtpalet.KeyPress
 
         If e.KeyChar = ChrW(Keys.Enter) Then
-            '
-            ' VALIDAMOS QUE EL PALLET EXISTA EN LA GUIA
-            '
             Dim palletpadre As String = ""
             Dim tablaq As DataTable = New DataTable
-            tablaq = fnc.ListarTablasSQL("SELECT * FROM detarece WHERE frec_codi1 = @frec_codi AND drec_codi = @drec_codi", _
-                                         New SqlParameter() { _
-                                            New SqlParameter("@frec_codi", SqlDbType.VarChar) With {.Value = frec_codi}, _
-                                            New SqlParameter("@drec_codi", SqlDbType.VarChar) With {.Value = txtpalet.Text.Trim()} _
-                                         })
+            tablaq = fnc.ListarTablasSQL("SELECT * FROM PALLETPICK WHERE  palletpick='" + txtpalet.Text.Trim() + "'")
 
-            If tablaq.Rows.Count = 0 Then
-                lmensaje.Text = "El pallet indicado no existe en la guia"
-                txtpalet.Text = ""
-                Beep()
-                Return
-            End If
-            pick = txtpalet.Text.Trim()
-            txtpalet.Text = "11780000000" + pick + "1"
-
-            '
-            ' VALIDAMOS SI EL PALLET YA SE PICKEO.  SI ES ASI, SE MUESTRA
-            ' LA UBICACION ACTUAL
-            '
-            tablaq = fnc.ListarTablasSQL("SELECT * FROM det_ots_tunel WHERE ott_id = @ott_id AND drec_codi = @drec_codi", _
-                                         New SqlParameter() { _
-                                            New SqlParameter("@ott_id", SqlDbType.Int) With {.Value = ott_id}, _
-                                            New SqlParameter("@drec_codi", SqlDbType.VarChar) With {.Value = pick} _
-                                        })
             If tablaq.Rows.Count > 0 Then
-                txtcamara.Text = tablaq.Rows(0)("dot_ca").ToString()
-                txtbanda.Text = tablaq.Rows(0)("dot_ba").ToString()
-                txtcolumna.Text = tablaq.Rows(0)("dot_co").ToString()
-                txtpiso.Text = tablaq.Rows(0)("dot_pi").ToString()
-                txtnivel.Text = tablaq.Rows(0)("dot_ni").ToString()
+
+                Dim tablaTRA As DataTable = New DataTable
+                tablaTRA = fnc.ListarTablasSQL("SELECT * FROM MOVPALLET WHERE  mov_folio='" + txtpalet.Text.Trim() + "'")
+                If tablaTRA.Rows.Count > 0 Then
+
+                    picktra = txtpalet.Text
+                Else
+                    picktra = ""
+
+                End If
+
+
+                palletpadre = tablaq.Rows(0)(0).ToString().Trim()
+                pick = txtpalet.Text.Trim()
+                txtpalet.Text = "11780000000" + palletpadre + "1"
+
+
+
+
+
+
+
+            Else
+                pick = ""
             End If
 
-            lmensaje.Text = ""
-            txtposicion.Text = ""
-            txtposicion.Enabled = True
-            txtposicion.Focus()
+
+            If txtpalet.Text.Length = 21 Then
+
+                codigo_pallet = ""
+                BtnLiberar.Visible = False
+
+                Dim sql As String = "SELECT racd_ca, racd_Ba, racd_Co, racd_Pi, racd_Ni, drec_rev " & _
+                                    "FROM rackdeta INNER JOIN detarece ON drec_codi=racd_codi " & _
+                                    "WHERE racd_codi='" + TransformaPallet(txtpalet.Text) + "'"
+
+                Dim tabla As DataTable = fnc.ListarTablasSQL(sql)
+
+
+                If tabla.Rows.Count > 0 Then
+
+                    If tabla.Rows(0)(5).ToString() <> "1" Then
+                        MsgBox("Debe revisar los envases antes de posicionar", MsgBoxStyle.Critical, "Aviso")
+                        BtnNuevo_Click(Nothing, Nothing)
+                        Exit Sub
+                    End If
+                    temporalposicion()
+                    txtcamara.Text = tabla.Rows(0)(0).ToString()
+                    txtbanda.Text = tabla.Rows(0)(1).ToString()
+                    txtcolumna.Text = tabla.Rows(0)(2).ToString()
+                    txtpiso.Text = tabla.Rows(0)(3).ToString()
+                    txtnivel.Text = tabla.Rows(0)(4).ToString()
+                    variables()
+                    lmensaje.Text = ""
+                    txtpalet.Enabled = False
+                    txtposicion.Enabled = True
+                    txtcolumna.Enabled = False
+                    txtposicion.Focus()
+
+                Else
+                    lmensaje.Text = "Pallet no existe"
+                    txtpalet.Text = ""
+                    txtpalet.Focus()
+                End If
+
+                lmensaje.Text = ""
+                txtposicion.Focus()
+
+            Else
+                'lmensaje.Text = "Pallet no existe"
+                txtpalet.Text = ""
+                txtpalet.Focus()
+            End If
+
 
         Else
             fnc.SoloNumeros(sender, e)
@@ -394,16 +471,6 @@ Public Class frm_PickOTTUnel
                 txtcolumna.Enabled = False
                 txtnivel.Enabled = True
                 ' verificar tipo de tarja
-
-                '
-                ' VERIFICAMOS QUE LA POSICION INDICADA CORRESPONDE A LA CAMARA
-                ' ASOCIADA A LA OT
-                '
-                If txtcamara.Text <> cam_codi Then
-                    lmensaje.Text = "La ubicacion no corresponde a una ubicacion de " + cam_descr
-                    txtposicion.Enabled = False
-                    Return
-                End If
 
                 Dim Sql_tip As String = "SELECT libre FROM camaraconf WHERE camara='" + txtcamara.Text.Trim() + "' "
 
@@ -472,13 +539,18 @@ Public Class frm_PickOTTUnel
             If txtposicion.Text = "" Or txtcamara.Text = "" Or txtpiso.Text = "" Or (txtnivel.Text = "" AndAlso txtcolumna.Enabled = False) Then
                 lmensaje.Text = "LLene todos los campos"
             Else
-                If fnc.verificaExistencia("det_ots_tunel", "racd_codi", fnc.CerosAnteriorString(txtpalet.Text, 9)) = False Then
+                If fnc.verificaExistencia("rackdeta", "racd_codi", fnc.CerosAnteriorString(txtpalet.Text, 9)) = True Then
 
                     If verificarPosicion() = 0 Then
 
                         Try
 
                             con.conectarSQL()
+
+                            If pick = "" Then
+                            Else
+                                ' txtpalet.Text = pick
+                            End If
 
                             Dim _cmd As SqlCommand = New SqlCommand("PAG_POSICIONAR", con.conSQL)
                             _cmd.CommandType = CommandType.StoredProcedure
@@ -488,42 +560,23 @@ Public Class frm_PickOTTUnel
                             _cmd.Parameters.AddWithValue("@columna", txtcolumna.Text)
                             _cmd.Parameters.AddWithValue("@piso", txtpiso.Text)
                             _cmd.Parameters.AddWithValue("@nivel", txtnivel.Text)
-
-                            ' TODO: ACLARAR VALOR CORRECTO DE @TIPO
                             If pick = "" Then
+
                                 _cmd.Parameters.AddWithValue("@tipo", "RR")
                             Else
+
                                 _cmd.Parameters.AddWithValue("@tipo", "RP")
                                 ' txtpalet.Text = pick
                             End If
 
                             _cmd.Parameters.AddWithValue("@encargado", CerosAnteriorString(lblcodigo.Text, 3))
 
-                            '
-                            ' ADICIONALMENTE AL POSICIONAMIENTO, SE ANEXA EL PALLET A LA OT
-                            '
-                            Dim _cmd2 As SqlCommand = New SqlCommand("INSERT INTO det_ots_tunel (ott_id, drec_codi, dot_ca, dot_ba, dot_co, dot_pi, dot_ni) " & _
-                                                                     " VALUES (@ott_id, @drec_codi, @dot_ca, @dot_ba, @dot_co, @dot_pi, @dot_ni)", con.conSQL)
-                            _cmd2.CommandType = CommandType.Text
-                            _cmd2.Parameters.AddWithValue("@ott_id", ott_id)
-                            _cmd2.Parameters.AddWithValue("@drec_codi", fnc.CerosAnteriorString(txtpalet.Text, 9))
-                            _cmd2.Parameters.AddWithValue("@dot_ca", txtcamara.Text)
-                            _cmd2.Parameters.AddWithValue("@dot_ba", txtbanda.Text)
-                            _cmd2.Parameters.AddWithValue("@dot_co", txtcolumna.Text)
-                            _cmd2.Parameters.AddWithValue("@dot_pi", fnc.CerosAnteriorString(txtpiso.Text.Trim(), 2))
-                            _cmd2.Parameters.AddWithValue("@dot_ni", fnc.CerosAnteriorString(txtnivel.Text.Trim(), 2))
-
                             Dim resp As Integer = 0
 
-                            Dim tx As SqlTransaction
                             Try
-                                tx = con.conSQL.BeginTransaction()
                                 resp = Convert.ToInt32(_cmd.ExecuteScalar())
-                                tx.Commit()
-
                             Catch ex As Exception
                                 resp = 1
-                                tx.Rollback()
                             End Try
 
                             If resp = 0 Then
@@ -556,7 +609,7 @@ Public Class frm_PickOTTUnel
                         End If
                     End If
                 Else
-                    MsgBox("El pallet ingresado ya fue posicionado", MsgBoxStyle.MsgBoxHelp, "Aviso")
+                    MsgBox("El pallet ingresado no existe", MsgBoxStyle.MsgBoxHelp, "Aviso")
                 End If
             End If
         End If
@@ -564,9 +617,6 @@ Public Class frm_PickOTTUnel
 
     Private Sub Posicionar_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
         lblcodigo.Text = codigo.ToString()
-        Text = String.Format("OT #{0}", ott_numero.Trim())
-        lblInfoOT.Text = frec_guiades.Trim() + "-" + cli_nomb.Trim()
-        refreshPickCount()
         txtpalet.Focus()
     End Sub
 
@@ -736,6 +786,7 @@ Public Class frm_PickOTTUnel
 
             If txtpalet.Text.Length = 21 Then
                 codigo_pallet = ""
+                BtnLiberar.Visible = False
 
                 Dim sql As String = "SELECT racd_ca, racd_Ba, racd_Co, racd_Pi, racd_Ni,drec_rev FROM " & _
                             "rackdeta INNER JOIN detarece ON drec_codi=racd_codi WHERE racd_codi='" + TransformaPallet(txtpalet.Text) + "'"
@@ -804,7 +855,7 @@ Public Class frm_PickOTTUnel
         txtcolumna.Text = CerosAnteriorString(txtcolumna.Text, 2)
     End Sub
 
-    Private Sub BtnLiberar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub BtnLiberar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnLiberar.Click
 
         If MsgBox("Seguro de liberar la posición", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Aviso") Then
             Try
@@ -840,6 +891,7 @@ Public Class frm_PickOTTUnel
             Catch ex As Exception
 
             End Try
+            BtnLiberar.Visible = False
             BtnNuevo_Click(sender, e)
         End If
 
@@ -889,6 +941,4 @@ Public Class frm_PickOTTUnel
     Private Sub txtnivel_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtnivel.TextChanged
 
     End Sub
-
-
 End Class

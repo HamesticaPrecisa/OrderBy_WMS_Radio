@@ -1,4 +1,6 @@
 ﻿' VES Sep 2019
+Imports System.Data.SqlClient
+
 Public Class frm_BuscarGuia
 
     Dim fnc As Funciones = New Funciones()
@@ -35,12 +37,13 @@ Public Class frm_BuscarGuia
     Private Function buscarGuias(ByVal pista As String) As DataTable
         Dim sql As String = "SELECT frec_guiades, frec_fecrec, cli_nomb, frec_unica" & _
                             "  FROM fichrece " & _
-                            "  LEFT JOIN clientes ON cli_rut = frec_rutcli"
+                            "  LEFT JOIN clientes ON cli_rut = frec_rutcli " & _
+                            " WHERE frec_receptunel = 2 " & _
+                            "   AND ott_pct < 100.0"
         If pista.Length > 0 Then
-            sql = sql + " WHERE frec_guiades LIKE '%" + pista + "%' " & _
-                        "    OR cli_nomb LIKE '%" + pista + "%'"
+            sql = sql + " AND (frec_guiades LIKE @pista OR  cli_nomb LIKE @pista)"
         End If
-        Dim result As DataTable = fnc.ListarTablasSQL(sql)
+        Dim result As DataTable = fnc.ListarTablasSQL(sql, New SqlParameter() {New SqlParameter("@pista", "%" & pista & "%")})
         If lastSQLError IsNot Nothing Then
             MessageBox.Show(lastSQLError, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1)
             Me.Close()
