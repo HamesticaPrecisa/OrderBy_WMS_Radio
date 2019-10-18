@@ -28,8 +28,15 @@ Partial Public Class frm_BuscarGuia
         Me.DataGridTextBoxColumn2 = New System.Windows.Forms.DataGridTextBoxColumn
         Me.txtbusca = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
+        Me.DataGridTextBoxColumn4 = New System.Windows.Forms.DataGridTextBoxColumn
         DataGridTextBoxColumn3 = New System.Windows.Forms.DataGridTextBoxColumn
         Me.SuspendLayout()
+        '
+        'DataGridTextBoxColumn3
+        '
+        DataGridTextBoxColumn3.Format = ""
+        DataGridTextBoxColumn3.FormatInfo = Nothing
+        DataGridTextBoxColumn3.MappingName = "frec_unica"
         '
         'btn_ok
         '
@@ -61,6 +68,7 @@ Partial Public Class frm_BuscarGuia
         'Titulo
         '
         Me.Titulo.GridColumnStyles.Add(Me.DataGridTextBoxColumn1)
+        Me.Titulo.GridColumnStyles.Add(Me.DataGridTextBoxColumn4)
         Me.Titulo.GridColumnStyles.Add(Me.DataGridTextBoxColumn2)
         Me.Titulo.GridColumnStyles.Add(DataGridTextBoxColumn3)
         '
@@ -94,11 +102,13 @@ Partial Public Class frm_BuscarGuia
         Me.Label1.Size = New System.Drawing.Size(51, 20)
         Me.Label1.Text = "Buscar"
         '
-        'DataGridTextBoxColumn3
+        'DataGridTextBoxColumn4
         '
-        DataGridTextBoxColumn3.Format = ""
-        DataGridTextBoxColumn3.FormatInfo = Nothing
-        DataGridTextBoxColumn3.MappingName = "frec_unica"
+        Me.DataGridTextBoxColumn4.Format = ""
+        Me.DataGridTextBoxColumn4.FormatInfo = Nothing
+        Me.DataGridTextBoxColumn4.HeaderText = "HPT"
+        Me.DataGridTextBoxColumn4.MappingName = "hpt"
+        Me.DataGridTextBoxColumn4.Width = 35
         '
         'frm_BuscarGuia
         '
@@ -124,4 +134,5 @@ Partial Public Class frm_BuscarGuia
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents DataGridTextBoxColumn1 As System.Windows.Forms.DataGridTextBoxColumn
     Friend WithEvents DataGridTextBoxColumn2 As System.Windows.Forms.DataGridTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn4 As System.Windows.Forms.DataGridTextBoxColumn
 End Class

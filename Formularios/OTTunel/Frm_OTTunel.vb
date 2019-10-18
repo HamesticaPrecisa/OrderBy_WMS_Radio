@@ -18,8 +18,14 @@ Public Class Frm_OTTunel
     Dim numot As String = ""
     Dim status As String = "BORRADOR"
 
+    Dim prefOTParcial As Boolean = True
+
+
     Private Sub Frm_OTTunel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Cursor.Current = Cursors.Default
+
+        ' Cargamos las preferencias de tunel
+        loadPrefs()
 
         ' Cargamos la lista de tuneles
         Dim tuneles As DataTable = fnc.ListarTablasSQL("SELECT cam_unica, cam_descr, cam_codi " & _
@@ -90,11 +96,15 @@ Public Class Frm_OTTunel
             cboTunel.Enabled = False
             txtGuia.Enabled = False
             btn_buscarGuia.Enabled = False
-            cboMercado.Enabled = False
             rbtTodos.Enabled = False
             rbtParcial.Enabled = False
             txtMaxPallets.Enabled = False
             btn_buscarGuia.Enabled = False
+        End If
+
+        ' Aplicamos algunas preferencias
+        If prefOTParcial = False And rbtTodos.Checked = True Then
+            pnlAlcance.Visible = False
         End If
     End Sub
 
@@ -176,7 +186,7 @@ Public Class Frm_OTTunel
 
     End Sub
 
-    Private Sub rbtParcial_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rbtParcial.CheckedChanged
+    Private Sub rbtParcial_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
         txtMaxPallets.Visible = rbtParcial.Checked
     End Sub
 
@@ -193,6 +203,8 @@ Public Class Frm_OTTunel
     Private Sub cmdOk_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdOk.Click
         If status = "BORRADOR" Then
             crearOT()
+        ElseIf status = "CARGANDO" Then
+            actualizarOT()
         Else
             Picking()
         End If
@@ -230,8 +242,8 @@ Public Class Frm_OTTunel
         Dim alcance As Integer = 0
         If rbtParcial.Checked Then alcance = 1
         Dim numpallets As Integer = CInt("0" + txtMaxPallets.Text)
-        Dim Sql As String = "INSERT INTO ots_tunel (ott_numero, frec_unica, ott_status, cam_unica, usu_codigo, ott_ususta, ott_fecsta, ott_deviceid, mer_id, ott_alcance, ott_numpallets) " & _
-                            " VAlUES (@ott_numero, @frec_unica, 'CARGANDO', @cam_unica, @usu_codigo, @ott_ususta, @ott_fecsta, @ott_deviceid, @mer_id, @ott_alcance, @ott_numpallets) "
+        Dim Sql As String = "INSERT INTO ots_tunel (ott_numero, frec_unica, ott_status, cam_unica, usu_codigo, ott_ususta, ott_fecsta, ott_iniciocarga, ott_deviceid, mer_id, ott_alcance, ott_numpallets) " & _
+                            " VAlUES (@ott_numero, @frec_unica, 'CARGANDO', @cam_unica, @usu_codigo, @ott_ususta, GETDATE(), GETDATE(), @ott_deviceid, @mer_id, @ott_alcance, @ott_numpallets) "
 
         idot = 0
         numot = BuscaCorrelativo("901")
@@ -244,7 +256,6 @@ Public Class Frm_OTTunel
                                 New SqlParameter("@cam_unica", cboTunel.SelectedValue), _
                                 New SqlParameter("@usu_codigo", SqlDbType.VarChar) With {.Value = usuario}, _
                                 New SqlParameter("@ott_ususta", SqlDbType.VarChar) With {.Value = usuario}, _
-                                New SqlParameter("@ott_fecsta", SqlDbType.DateTime) With {.Value = DateTime.Now}, _
                                 New SqlParameter("@ott_deviceid", SqlDbType.VarChar) With {.Value = deviceId}, _
                                 New SqlParameter("@mer_id", SqlDbType.Int) With {.Value = cboMercado.SelectedValue}, _
                                 New SqlParameter("@ott_alcance", SqlDbType.SmallInt) With {.Value = alcance}, _
@@ -255,6 +266,28 @@ Public Class Frm_OTTunel
                 Dim info As DataRow = fnc.sqlExecuteRow("SELECT ott_id FROM ots_tunel WHERE ott_numero = '" & numot.Trim() & "'")
                 idot = CInt(info("ott_id").ToString())
             End If
+            Cursor.Current = Cursors.Default
+
+            Picking()
+        Else
+            Cursor.Current = Cursors.Default
+            MessageBox.Show(lastSQLError, "Cuidado", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1)
+        End If
+
+    End Sub
+
+    Private Sub actualizarOT()
+        Cursor.Current = Cursors.WaitCursor
+
+        Dim usuario As String = CerosAnteriorString(id_global.ToString(), 3)
+        Dim Sql As String = "UPDATE ots_tunel SET mer_id = @mer_id WHERE ott_id = @ott_id"
+
+        If fnc.MovimientoSQL(Sql, New SqlParameter() _
+                             { _
+                                New SqlParameter("@ott_id", SqlDbType.Int) With {.Value = idot}, _
+                                New SqlParameter("@mer_id", SqlDbType.Int) With {.Value = cboMercado.SelectedValue} _
+                             }) <> 0 Then
+
             Cursor.Current = Cursors.Default
 
             Picking()
@@ -291,8 +324,11 @@ Public Class Frm_OTTunel
             Return False
         End If
         If idot > 0 Then
-            Dim sql As String = "UPDATE ots_tunel SET ott_status = 'ANULADA' WHERE ott_id = @ott_id"
-            If fnc.MovimientoSQL(sql, New SqlParameter() {New SqlParameter("@ott_id", SqlDbType.Int) With {.Value = idot}}) = 0 Then
+            Dim sql As String = "UPDATE ots_tunel SET ott_status = 'ANULADA',ott_fecsta=GETDATE(), ott_ususta=@usuario WHERE ott_id = @ott_id"
+            If fnc.MovimientoSQL(sql, New SqlParameter() { _
+                                    New SqlParameter("@ott_id", idot), _
+                                    New SqlParameter("@usuario", CerosAnteriorString(id_global.ToString(), 3)) _
+                                 }) = 0 Then
                 MessageBox.Show(lastSQLError, "Cuidado", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1)
                 Return False
             End If
@@ -325,5 +361,20 @@ Public Class Frm_OTTunel
 
     Private Sub btnSalir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSalir.Click
         Me.Close()
+    End Sub
+
+
+    Private Sub loadPrefs()
+        Dim prefs As DataTable = fnc.ListarTablasSQL("SELECT * FROM dbo.fnListPrefs('ptech.tunel.*')")
+        For Each pref As DataRow In prefs.Rows
+            Dim prfId As String = pref("prf_id").ToString.Trim()
+            Dim prfValue As String = pref("prf_value").ToString.Trim()
+
+            Select Case prfId
+                Case "permitirOTParcial"
+                    prefOTParcial = (prfValue = "True")
+
+            End Select
+        Next
     End Sub
 End Class

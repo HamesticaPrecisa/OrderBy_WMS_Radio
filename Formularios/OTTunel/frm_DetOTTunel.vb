@@ -94,7 +94,11 @@ Public Class frm_DetOTTunel
                              " WHERE a.ott_id = @ott_id " & _
                              "   AND f.dot_id IS NULL"
 
-        Dim sql2 As String = "UPDATE ots_tunel SET ott_status = 'PORINICIAR' WHERE ott_id = @ott_id"
+        Dim sql2 As String = "UPDATE ots_tunel " & _
+                             "   SET ott_status = 'PORINICIAR', " & _
+                             "       ott_fecsta=GETDATE(), " & _
+                             "       ott_finalcarga=GETDATE() " & _
+                             " WHERE ott_id = @ott_id"
 
         Dim con As Conexion = New Conexion()
         Dim cmd1 As SqlCommand

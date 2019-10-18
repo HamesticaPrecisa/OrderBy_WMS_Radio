@@ -31,13 +31,14 @@ Partial Public Class Frm_OTTunel
         Me.cboMercado = New System.Windows.Forms.ComboBox
         Me.Label3 = New System.Windows.Forms.Label
         Me.PictureBox2 = New System.Windows.Forms.PictureBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox
-        Me.rbtTodos = New System.Windows.Forms.RadioButton
-        Me.rbtParcial = New System.Windows.Forms.RadioButton
-        Me.txtMaxPallets = New System.Windows.Forms.TextBox
         Me.cmdOk = New System.Windows.Forms.Button
         Me.btnSalir = New System.Windows.Forms.Button
+        Me.pnlAlcance = New System.Windows.Forms.Panel
+        Me.txtMaxPallets = New System.Windows.Forms.TextBox
+        Me.rbtParcial = New System.Windows.Forms.RadioButton
+        Me.rbtTodos = New System.Windows.Forms.RadioButton
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.pnlAlcance.SuspendLayout()
         Me.SuspendLayout()
         '
         'cmdDescartar
@@ -141,53 +142,6 @@ Partial Public Class Frm_OTTunel
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(237, 30)
         '
-        'Label4
-        '
-        Me.Label4.BackColor = System.Drawing.Color.Silver
-        Me.Label4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(3, 138)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 19)
-        Me.Label4.Text = "Pallets"
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Silver
-        Me.PictureBox4.Location = New System.Drawing.Point(2, 132)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(237, 62)
-        '
-        'rbtTodos
-        '
-        Me.rbtTodos.BackColor = System.Drawing.Color.Silver
-        Me.rbtTodos.Checked = True
-        Me.rbtTodos.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.rbtTodos.Location = New System.Drawing.Point(72, 138)
-        Me.rbtTodos.Name = "rbtTodos"
-        Me.rbtTodos.Size = New System.Drawing.Size(126, 20)
-        Me.rbtTodos.TabIndex = 143
-        Me.rbtTodos.Text = "Todos"
-        '
-        'rbtParcial
-        '
-        Me.rbtParcial.BackColor = System.Drawing.Color.Silver
-        Me.rbtParcial.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.rbtParcial.Location = New System.Drawing.Point(72, 164)
-        Me.rbtParcial.Name = "rbtParcial"
-        Me.rbtParcial.Size = New System.Drawing.Size(126, 20)
-        Me.rbtParcial.TabIndex = 144
-        Me.rbtParcial.TabStop = False
-        Me.rbtParcial.Text = "Parcial"
-        '
-        'txtMaxPallets
-        '
-        Me.txtMaxPallets.Location = New System.Drawing.Point(157, 161)
-        Me.txtMaxPallets.MaxLength = 30
-        Me.txtMaxPallets.Name = "txtMaxPallets"
-        Me.txtMaxPallets.Size = New System.Drawing.Size(77, 25)
-        Me.txtMaxPallets.TabIndex = 145
-        Me.txtMaxPallets.Visible = False
-        '
         'cmdOk
         '
         Me.cmdOk.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -205,6 +159,57 @@ Partial Public Class Frm_OTTunel
         Me.btnSalir.TabIndex = 156
         Me.btnSalir.Text = "Salir"
         '
+        'pnlAlcance
+        '
+        Me.pnlAlcance.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.pnlAlcance.Controls.Add(Me.txtMaxPallets)
+        Me.pnlAlcance.Controls.Add(Me.rbtParcial)
+        Me.pnlAlcance.Controls.Add(Me.rbtTodos)
+        Me.pnlAlcance.Controls.Add(Me.Label4)
+        Me.pnlAlcance.Location = New System.Drawing.Point(2, 132)
+        Me.pnlAlcance.Name = "pnlAlcance"
+        Me.pnlAlcance.Size = New System.Drawing.Size(237, 63)
+        '
+        'txtMaxPallets
+        '
+        Me.txtMaxPallets.Location = New System.Drawing.Point(157, 30)
+        Me.txtMaxPallets.MaxLength = 30
+        Me.txtMaxPallets.Name = "txtMaxPallets"
+        Me.txtMaxPallets.Size = New System.Drawing.Size(77, 25)
+        Me.txtMaxPallets.TabIndex = 149
+        Me.txtMaxPallets.Visible = False
+        '
+        'rbtParcial
+        '
+        Me.rbtParcial.BackColor = System.Drawing.Color.Silver
+        Me.rbtParcial.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.rbtParcial.Location = New System.Drawing.Point(72, 33)
+        Me.rbtParcial.Name = "rbtParcial"
+        Me.rbtParcial.Size = New System.Drawing.Size(126, 20)
+        Me.rbtParcial.TabIndex = 148
+        Me.rbtParcial.TabStop = False
+        Me.rbtParcial.Text = "Parcial"
+        '
+        'rbtTodos
+        '
+        Me.rbtTodos.BackColor = System.Drawing.Color.Silver
+        Me.rbtTodos.Checked = True
+        Me.rbtTodos.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.rbtTodos.Location = New System.Drawing.Point(72, 7)
+        Me.rbtTodos.Name = "rbtTodos"
+        Me.rbtTodos.Size = New System.Drawing.Size(126, 20)
+        Me.rbtTodos.TabIndex = 147
+        Me.rbtTodos.Text = "Todos"
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.Silver
+        Me.Label4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.Label4.Location = New System.Drawing.Point(3, 7)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(75, 19)
+        Me.Label4.Text = "Pallets"
+        '
         'Frm_OTTunel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -213,11 +218,6 @@ Partial Public Class Frm_OTTunel
         Me.ClientSize = New System.Drawing.Size(240, 294)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.cmdOk)
-        Me.Controls.Add(Me.txtMaxPallets)
-        Me.Controls.Add(Me.rbtParcial)
-        Me.Controls.Add(Me.rbtTodos)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.cboMercado)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox2)
@@ -230,8 +230,10 @@ Partial Public Class Frm_OTTunel
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.cmdDescartar)
+        Me.Controls.Add(Me.pnlAlcance)
         Me.Name = "Frm_OTTunel"
         Me.Text = "O/T Túnel"
+        Me.pnlAlcance.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -247,11 +249,11 @@ Partial Public Class Frm_OTTunel
     Friend WithEvents cboMercado As System.Windows.Forms.ComboBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents rbtTodos As System.Windows.Forms.RadioButton
-    Friend WithEvents rbtParcial As System.Windows.Forms.RadioButton
-    Friend WithEvents txtMaxPallets As System.Windows.Forms.TextBox
     Friend WithEvents cmdOk As System.Windows.Forms.Button
     Friend WithEvents btnSalir As System.Windows.Forms.Button
+    Friend WithEvents pnlAlcance As System.Windows.Forms.Panel
+    Friend WithEvents txtMaxPallets As System.Windows.Forms.TextBox
+    Friend WithEvents rbtParcial As System.Windows.Forms.RadioButton
+    Friend WithEvents rbtTodos As System.Windows.Forms.RadioButton
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

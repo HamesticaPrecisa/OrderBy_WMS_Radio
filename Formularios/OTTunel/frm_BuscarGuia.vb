@@ -35,11 +35,10 @@ Public Class frm_BuscarGuia
     End Sub
 
     Private Function buscarGuias(ByVal pista As String) As DataTable
-        Dim sql As String = "SELECT frec_guiades, frec_fecrec, cli_nomb, frec_unica" & _
-                            "  FROM fichrece " & _
-                            "  LEFT JOIN clientes ON cli_rut = frec_rutcli " & _
-                            " WHERE frec_receptunel = 2 " & _
-                            "   AND ott_pct < 100.0"
+        Dim sql As String = "SELECT frec_guiades, hpt, cli_nomb, frec_unica" & _
+                            "  FROM vwGuiasPendTunel " & _
+                            " ORDER BY hpt"
+
         If pista.Length > 0 Then
             sql = sql + " AND (frec_guiades LIKE @pista OR  cli_nomb LIKE @pista)"
         End If
