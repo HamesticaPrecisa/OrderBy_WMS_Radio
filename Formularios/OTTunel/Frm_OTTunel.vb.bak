@@ -131,10 +131,10 @@ Public Class Frm_OTTunel
         '
         ' VERIFICAMOS QUE LA GUIA EXISTA
         '
-        Dim row As DataRow = fnc.sqlExecuteRow("SELECT frec_codi, frec_guiades, frec_fecrec, cli_nomb, frec_unica ,ott_pct " & _
+        Dim row As DataRow = fnc.sqlExecuteRow("SELECT frec_codi, frec_fecrec, cli_nomb, frec_unica ,ott_pct " & _
                                                "  FROM fichrece " & _
                                                "  LEFT JOIN clientes ON cli_rut = frec_rutcli " & _
-                                               " WHERE frec_guiades = @guia OR frec_codi = @guia", _
+                                               " WHERE frec_guiades = @guia", _
                                                New SqlParameter() {New SqlParameter("@guia", SqlDbType.VarChar) With {.Value = guia}})
         If row Is Nothing Then
             lblCliente.Text = ""
@@ -146,7 +146,7 @@ Public Class Frm_OTTunel
 
         frec_unica = row("frec_unica").ToString()
         frec_codi = row("frec_codi").ToString()
-        frec_guiades = row("frec_guiades").ToString()
+        frec_guiades = guia
         cli_nomb = row("cli_nomb").ToString().Trim()
         lblCliente.Text = cli_nomb
 
@@ -159,19 +159,12 @@ Public Class Frm_OTTunel
         row = fnc.sqlExecuteRow("SELECT COUNT(*) AS maxpallets " & _
                                 "  FROM detarece a " & _
                                 " WHERE frec_codi1 = @frec_codi " & _
-                                "   AND drec_codi NOT IN (SELECT drec_codi FROM vwPalletsEnTunel)", _
+                                "   AND drec_codi NOT IN (SELECT drec_codi FROM det_ots_tunel)", _
                                 New SqlParameter() { _
                                     New SqlParameter("@frec_codi", SqlDbType.VarChar) With {.Value = frec_codi} _
                                 })
-
-        If row IsNot Nothing Then
-            frec_maxpallets = CInt(row("maxpallets").ToString())
-            txtMaxPallets.Text = frec_maxpallets.ToString()
-        Else
-            MsgBox(lastSQLError, MsgBoxStyle.Critical, "Cuidado")
-            Return False
-        End If
-
+        frec_maxpallets = CInt(row("maxpallets").ToString())
+        txtMaxPallets.Text = frec_maxpallets.ToString()
 
 
         '
@@ -201,8 +194,8 @@ Public Class Frm_OTTunel
         Dim frm As frm_BuscarGuia = New frm_BuscarGuia()
         frm.ShowDialog()
         If frm.frec_guiades.Length > 0 Then
-            txtGuia.Text = frm.frec_codi
-            validarGuia(frm.frec_codi)
+            txtGuia.Text = frm.frec_guiades
+            validarGuia(frm.frec_guiades)
             cboMercado.Focus()
         End If
     End Sub
@@ -273,20 +266,9 @@ Public Class Frm_OTTunel
                 Dim info As DataRow = fnc.sqlExecuteRow("SELECT ott_id FROM ots_tunel WHERE ott_numero = '" & numot.Trim() & "'")
                 idot = CInt(info("ott_id").ToString())
             End If
-
-
             Cursor.Current = Cursors.Default
 
             Picking()
-
-            cmdOk.Text = "Continuar"
-            cboTunel.Enabled = False
-            txtGuia.Enabled = False
-            btn_buscarGuia.Enabled = False
-            rbtTodos.Enabled = False
-            rbtParcial.Enabled = False
-            txtMaxPallets.Enabled = False
-            btn_buscarGuia.Enabled = False
         Else
             Cursor.Current = Cursors.Default
             MessageBox.Show(lastSQLError, "Cuidado", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1)

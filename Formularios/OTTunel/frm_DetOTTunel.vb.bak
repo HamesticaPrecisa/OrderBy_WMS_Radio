@@ -32,7 +32,7 @@ Public Class frm_DetOTTunel
                             "  INNER JOIN detarece c ON c.frec_codi1 = b.frec_codi " & _
                             "  INNER JOIN camaras d ON d.cam_unica = a.cam_unica " & _
                             "  INNER JOIN rackdeta e ON e.racd_codi = c.drec_codi AND e.racd_ca = d.cam_codi " & _
-                            "   LEFT JOIN det_ots_tunel f ON f.ott_id = @ott_id AND f.drec_codi = c.drec_codi " & _
+                            "   LEFT JOIN det_ots_tunel f ON f.drec_codi = c.drec_codi " & _
                             "  WHERE a.ott_id = @ott_id " & _
                             "    AND f.dot_id IS NULL"
         Dim data As DataTable = fnc.ListarTablasSQL(sql, _
@@ -90,7 +90,7 @@ Public Class frm_DetOTTunel
                              " INNER JOIN detarece c ON c.frec_codi1 = b.frec_codi " & _
                              " INNER JOIN camaras d ON d.cam_unica = a.cam_unica " & _
                              "  LEFT JOIN rackdeta e ON e.racd_codi = c.drec_codi AND e.racd_ca = d.cam_codi " & _
-                             "  LEFT JOIN det_ots_tunel f ON f.drec_codi = c.drec_codi AND f.ott_id = @ott_id" & _
+                             "  LEFT JOIN det_ots_tunel f ON f.drec_codi = c.drec_codi " & _
                              " WHERE a.ott_id = @ott_id " & _
                              "   AND f.dot_id IS NULL"
 
