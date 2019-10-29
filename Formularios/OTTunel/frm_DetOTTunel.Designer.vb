@@ -31,7 +31,6 @@ Partial Public Class frm_DetOTTunel
         Me.lblCount = New System.Windows.Forms.Label
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.lblInfoOT = New System.Windows.Forms.Label
-        Me.cmdDescartar = New System.Windows.Forms.Button
         Me.btnSalir = New System.Windows.Forms.Button
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -41,7 +40,7 @@ Partial Public Class frm_DetOTTunel
         Me.DataGrid1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.DataGrid1.Location = New System.Drawing.Point(0, 44)
         Me.DataGrid1.Name = "DataGrid1"
-        Me.DataGrid1.Size = New System.Drawing.Size(240, 168)
+        Me.DataGrid1.Size = New System.Drawing.Size(240, 207)
         Me.DataGrid1.TabIndex = 0
         Me.DataGrid1.TableStyles.Add(Me.DataGridTableStyle1)
         '
@@ -105,9 +104,9 @@ Partial Public Class frm_DetOTTunel
         'btnAgregar
         '
         Me.btnAgregar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnAgregar.Location = New System.Drawing.Point(122, 218)
+        Me.btnAgregar.Location = New System.Drawing.Point(122, 257)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(115, 73)
+        Me.btnAgregar.Size = New System.Drawing.Size(115, 34)
         Me.btnAgregar.TabIndex = 2
         Me.btnAgregar.Text = "Posicionar"
         '
@@ -138,16 +137,6 @@ Partial Public Class frm_DetOTTunel
         Me.lblInfoOT.Size = New System.Drawing.Size(400, 20)
         Me.lblInfoOT.Text = "000000 - Nombre del cliente"
         '
-        'cmdDescartar
-        '
-        Me.cmdDescartar.BackColor = System.Drawing.Color.Red
-        Me.cmdDescartar.ForeColor = System.Drawing.Color.White
-        Me.cmdDescartar.Location = New System.Drawing.Point(3, 218)
-        Me.cmdDescartar.Name = "cmdDescartar"
-        Me.cmdDescartar.Size = New System.Drawing.Size(115, 34)
-        Me.cmdDescartar.TabIndex = 117
-        Me.cmdDescartar.Text = "Descartar"
-        '
         'btnSalir
         '
         Me.btnSalir.Location = New System.Drawing.Point(3, 257)
@@ -163,7 +152,6 @@ Partial Public Class frm_DetOTTunel
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(240, 294)
         Me.Controls.Add(Me.btnSalir)
-        Me.Controls.Add(Me.cmdDescartar)
         Me.Controls.Add(Me.DataGrid1)
         Me.Controls.Add(Me.lblCount)
         Me.Controls.Add(Me.Panel1)
@@ -186,6 +174,5 @@ Partial Public Class frm_DetOTTunel
     Friend WithEvents DataGridTextBoxColumn6 As System.Windows.Forms.DataGridTextBoxColumn
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents lblInfoOT As System.Windows.Forms.Label
-    Friend WithEvents cmdDescartar As System.Windows.Forms.Button
     Friend WithEvents btnSalir As System.Windows.Forms.Button
 End Class

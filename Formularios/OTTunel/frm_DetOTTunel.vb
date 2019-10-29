@@ -134,7 +134,7 @@ Public Class frm_DetOTTunel
         Return ok
     End Function
 
-    Private Sub cmdDescartar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdDescartar.Click
+    Private Sub cmdDescartar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         If caller.Descartar() Then Me.Close()
     End Sub
 

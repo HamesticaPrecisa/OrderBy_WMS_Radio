@@ -37,7 +37,7 @@ Public Class frm_BuscarGuia
     End Sub
 
     Private Function buscarGuias(ByVal pista As String) As DataTable
-        Dim sql As String = "SELECT frec_codi, hpt, cli_nomb, frec_guiades, frec_unica" & _
+        Dim sql As String = "SELECT frec_codi, hpt, numpallets, cli_nomb, frec_guiades, frec_unica" & _
                             "  FROM vwGuiasPendTunel " & _
                             " ORDER BY hpt"
 

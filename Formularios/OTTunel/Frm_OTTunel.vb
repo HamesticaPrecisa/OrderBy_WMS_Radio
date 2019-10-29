@@ -73,7 +73,8 @@ Public Class Frm_OTTunel
                                New SqlParameter() {New SqlParameter("@deviceid", SqlDbType.VarChar) With {.Value = deviceId}})
         If ot Is Nothing Then
             cboTunel.Text = "SELECCIONAR"
-            cboMercado.Text = "SELECCIONAR"
+            cboMercado.Text = "(NINGUNO)"
+            cboMercado.Enabled = False
         Else
             idot = CInt(ot("ott_id").ToString())
             numot = ot("ott_numero").ToString().Trim()
@@ -92,6 +93,9 @@ Public Class Frm_OTTunel
             If CInt(ot("ott_alcance").ToString()) = 1 Then rbtParcial.Checked = True
             txtMaxPallets.Text = ot("ott_numpallets").ToString()
             cmdOk.Text = "Continuar"
+            cmdDescartar.Enabled = False
+            cboMercado.Enabled = False
+
 
             cboTunel.Enabled = False
             txtGuia.Enabled = False
@@ -131,7 +135,7 @@ Public Class Frm_OTTunel
         '
         ' VERIFICAMOS QUE LA GUIA EXISTA
         '
-        Dim row As DataRow = fnc.sqlExecuteRow("SELECT frec_codi, frec_guiades, frec_fecrec, cli_nomb, frec_unica ,ott_pct " & _
+        Dim row As DataRow = fnc.sqlExecuteRow("SELECT frec_codi, frec_guiades, frec_fecrec, cli_nomb, frec_unica ,ott_pct, mer_id " & _
                                                "  FROM fichrece " & _
                                                "  LEFT JOIN clientes ON cli_rut = frec_rutcli " & _
                                                " WHERE frec_guiades = @guia OR frec_codi = @guia", _
@@ -148,6 +152,7 @@ Public Class Frm_OTTunel
         frec_codi = row("frec_codi").ToString()
         frec_guiades = row("frec_guiades").ToString()
         cli_nomb = row("cli_nomb").ToString().Trim()
+        cboMercado.SelectedValue = CInt(row("mer_id"))
         lblCliente.Text = cli_nomb
 
         Dim ott_pct As Decimal = CDec(row("ott_pct").ToString())

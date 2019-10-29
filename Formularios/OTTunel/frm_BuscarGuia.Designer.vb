@@ -30,6 +30,7 @@ Partial Public Class frm_BuscarGuia
         Me.DataGridTextBoxColumn2 = New System.Windows.Forms.DataGridTextBoxColumn
         Me.txtbusca = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
+        Me.DataGridTextBoxColumn3 = New System.Windows.Forms.DataGridTextBoxColumn
         dgr_frec_unica = New System.Windows.Forms.DataGridTextBoxColumn
         Me.SuspendLayout()
         '
@@ -79,6 +80,7 @@ Partial Public Class frm_BuscarGuia
         '
         Me.Titulo.GridColumnStyles.Add(Me.DataGridTextBoxColumn1)
         Me.Titulo.GridColumnStyles.Add(Me.DataGridTextBoxColumn4)
+        Me.Titulo.GridColumnStyles.Add(Me.DataGridTextBoxColumn3)
         Me.Titulo.GridColumnStyles.Add(Me.DataGridTextBoxColumn2)
         Me.Titulo.GridColumnStyles.Add(Me.DataGridTextBoxColumn5)
         Me.Titulo.GridColumnStyles.Add(dgr_frec_unica)
@@ -121,6 +123,14 @@ Partial Public Class frm_BuscarGuia
         Me.Label1.Size = New System.Drawing.Size(51, 20)
         Me.Label1.Text = "Buscar"
         '
+        'DataGridTextBoxColumn3
+        '
+        Me.DataGridTextBoxColumn3.Format = ""
+        Me.DataGridTextBoxColumn3.FormatInfo = Nothing
+        Me.DataGridTextBoxColumn3.HeaderText = "Pallets"
+        Me.DataGridTextBoxColumn3.MappingName = "numpallets"
+        Me.DataGridTextBoxColumn3.Width = 45
+        '
         'frm_BuscarGuia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -147,4 +157,5 @@ Partial Public Class frm_BuscarGuia
     Friend WithEvents DataGridTextBoxColumn2 As System.Windows.Forms.DataGridTextBoxColumn
     Friend WithEvents DataGridTextBoxColumn4 As System.Windows.Forms.DataGridTextBoxColumn
     Friend WithEvents DataGridTextBoxColumn5 As System.Windows.Forms.DataGridTextBoxColumn
+    Friend WithEvents DataGridTextBoxColumn3 As System.Windows.Forms.DataGridTextBoxColumn
 End Class
