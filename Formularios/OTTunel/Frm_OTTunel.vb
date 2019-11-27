@@ -19,6 +19,7 @@ Public Class Frm_OTTunel
     Dim status As String = "BORRADOR"
 
     Dim prefOTParcial As Boolean = True
+    Dim maxPalletsPorTunel As Integer = 24
 
 
     Private Sub Frm_OTTunel_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -169,15 +170,16 @@ Public Class Frm_OTTunel
                                     New SqlParameter("@frec_codi", SqlDbType.VarChar) With {.Value = frec_codi} _
                                 })
 
-        If row IsNot Nothing Then
-            frec_maxpallets = CInt(row("maxpallets").ToString())
-            txtMaxPallets.Text = frec_maxpallets.ToString()
-        Else
+        If row Is Nothing Then
             MsgBox(lastSQLError, MsgBoxStyle.Critical, "Cuidado")
             Return False
         End If
 
+        Dim numPallets As Integer = CInt(row("maxpallets").ToString())
 
+
+        frec_maxpallets = numPallets
+        txtMaxPallets.Text = frec_maxpallets.ToString()
 
         '
         ' SI LA GUIA YA TIENE PALLETS EN TUNEL, SE FUERZA 
@@ -245,6 +247,45 @@ Public Class Frm_OTTunel
             Return
         End If
 
+        '
+        '   DETERMINAMOS LA CANTIDAD TOTAL DE PALLETS EN OTRAS
+        '   OTS EN PROCESO ASOCIADAS AL MISMO TUNEL
+        '
+        Dim row2 As DataRow
+        row2 = fnc.sqlExecuteRow("SELECT SUM(ott_numpallets) AS numpallets,COUNT(*) AS numots " & _
+                                 "  FROM ots_tunel " & _
+                                 " WHERE cam_unica = @cam_unica" & _
+                                 "   AND ott_status NOT IN ('ANULADA','CERRADA')", _
+                                 New SqlParameter() { _
+                                    New SqlParameter("@cam_unica", cboTunel.SelectedValue) _
+                                })
+
+        If row2 Is Nothing Then
+            MsgBox(lastSQLError, MsgBoxStyle.Critical, "Cuidado")
+            Return
+        End If
+        Dim palletsEnOT As Integer = 0
+        If CInt(row2("numots").ToString()) > 0 Then
+            palletsEnOT = CInt(row2("numpallets").ToString())
+        End If
+
+
+        ' 
+        '  SI LA CANTIDAD DE PALLETS YA EN EL TUNEL MAS LA CANTIDAD DE PALLETS
+        '  EN LA GUIA ACTUAL SUPERA EL MAXIMO DE PALLETS PERMITIDOS EN TUNEL
+        '  SE PIDE CONFIRMACION
+        '
+        Dim numpallets As Integer = CInt("0" + txtMaxPallets.Text)
+        If (palletsEnOT + numpallets) > maxPalletsPorTunel Then
+            If MessageBox.Show(String.Format("Este túnel ya tiene {0} pallets asignados, por lo que al adicionar " & _
+                                         "los {1} pallets de esta guia se superará la apacidad del túnel ({2})." & _
+                                         "Desea continuar?", palletsEnOT, numpallets, maxPalletsPorTunel), _
+                            "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
+                Return
+            End If
+        End If
+
+
         If MessageBox.Show("Registrar esta OT?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.No Then
             Return
         End If
@@ -253,7 +294,6 @@ Public Class Frm_OTTunel
         Dim usuario As String = CerosAnteriorString(id_global.ToString(), 3)
         Dim alcance As Integer = 0
         If rbtParcial.Checked Then alcance = 1
-        Dim numpallets As Integer = CInt("0" + txtMaxPallets.Text)
         Dim Sql As String = "INSERT INTO ots_tunel (ott_numero, frec_unica, ott_status, cam_unica, usu_codigo, ott_ususta, ott_fecsta, ott_iniciocarga, ott_deviceid, mer_id, ott_alcance, ott_numpallets) " & _
                             " VAlUES (@ott_numero, @frec_unica, 'CARGANDO', @cam_unica, @usu_codigo, @ott_ususta, GETDATE(), GETDATE(), @ott_deviceid, @mer_id, @ott_alcance, @ott_numpallets) "
 
@@ -397,6 +437,8 @@ Public Class Frm_OTTunel
                 Case "permitirOTParcial"
                     prefOTParcial = (prfValue = "True")
 
+                Case "maxPalletsPorTunel"
+                    maxPalletsPorTunel = CInt(prfValue)
             End Select
         Next
     End Sub

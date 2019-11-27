@@ -93,10 +93,11 @@ Partial Public Class Frm_Inicio
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(35, 248)
+        Me.Label4.Location = New System.Drawing.Point(12, 248)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(171, 20)
-        Me.Label4.Text = " v. 27.10.2019.0358"
+        Me.Label4.Size = New System.Drawing.Size(225, 20)
+        Me.Label4.Text = " v. 21.11.2019.1135"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Frm_Inicio
         '

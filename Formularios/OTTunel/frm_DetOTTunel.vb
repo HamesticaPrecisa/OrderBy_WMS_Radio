@@ -102,7 +102,7 @@ Public Class frm_DetOTTunel
 
         Dim con As Conexion = New Conexion()
         Dim cmd1 As SqlCommand
-        Dim cmd2 As SqlCommand 
+        Dim cmd2 As SqlCommand
         Dim tx As SqlTransaction
         Dim ok As Boolean = False
         Try
