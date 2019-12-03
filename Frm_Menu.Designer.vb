@@ -88,6 +88,9 @@ Partial Public Class Frm_Menu
         Me.ml_pedidos_locales = New System.Windows.Forms.Label
         Me.PictureBox23 = New System.Windows.Forms.PictureBox
         Me.m_pedidos_locales = New System.Windows.Forms.PictureBox
+        Me.m_201 = New System.Windows.Forms.PictureBox
+        Me.ml_201 = New System.Windows.Forms.Label
+        Me.PictureBox24 = New System.Windows.Forms.PictureBox
         Me.SuspendLayout()
         '
         'm_78
@@ -705,12 +708,42 @@ Partial Public Class Frm_Menu
         Me.m_pedidos_locales.Size = New System.Drawing.Size(91, 63)
         Me.m_pedidos_locales.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         '
+        'm_201
+        '
+        Me.m_201.BackColor = System.Drawing.Color.White
+        Me.m_201.Enabled = False
+        Me.m_201.Image = CType(resources.GetObject("m_201.Image"), System.Drawing.Image)
+        Me.m_201.Location = New System.Drawing.Point(618, 95)
+        Me.m_201.Name = "m_201"
+        Me.m_201.Size = New System.Drawing.Size(91, 63)
+        Me.m_201.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        '
+        'ml_201
+        '
+        Me.ml_201.BackColor = System.Drawing.Color.Red
+        Me.ml_201.Font = New System.Drawing.Font("Tahoma", 6.0!, System.Drawing.FontStyle.Bold)
+        Me.ml_201.Location = New System.Drawing.Point(619, 160)
+        Me.ml_201.Name = "ml_201"
+        Me.ml_201.Size = New System.Drawing.Size(91, 15)
+        Me.ml_201.Text = "OTS TUNEL"
+        Me.ml_201.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'PictureBox24
+        '
+        Me.PictureBox24.BackColor = System.Drawing.Color.Silver
+        Me.PictureBox24.Location = New System.Drawing.Point(615, 90)
+        Me.PictureBox24.Name = "PictureBox24"
+        Me.PictureBox24.Size = New System.Drawing.Size(98, 85)
+        '
         'Frm_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(949, 286)
+        Me.Controls.Add(Me.m_201)
+        Me.Controls.Add(Me.ml_201)
+        Me.Controls.Add(Me.PictureBox24)
         Me.Controls.Add(Me.m_pedidos_locales)
         Me.Controls.Add(Me.ml_pedidos_locales)
         Me.Controls.Add(Me.PictureBox23)
@@ -852,4 +885,7 @@ Partial Public Class Frm_Menu
     Friend WithEvents ml_pedidos_locales As System.Windows.Forms.Label
     Friend WithEvents PictureBox23 As System.Windows.Forms.PictureBox
     Friend WithEvents m_pedidos_locales As System.Windows.Forms.PictureBox
+    Friend WithEvents m_201 As System.Windows.Forms.PictureBox
+    Friend WithEvents ml_201 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox24 As System.Windows.Forms.PictureBox
 End Class

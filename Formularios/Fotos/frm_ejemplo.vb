@@ -24,7 +24,7 @@ Public Class frm_ejemplo
             End Try
         End If
 
-        Dim sql = "SELECT TOP (10) cl_fol FROM zchecklist"
+        Dim sql As String = "SELECT TOP (10) cl_fol FROM zchecklist"
 
         Dim dt As DataTable = fnc.ListarTablasSQL(sql)
 

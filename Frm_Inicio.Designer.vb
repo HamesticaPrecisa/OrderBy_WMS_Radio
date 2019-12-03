@@ -35,7 +35,7 @@ Partial Public Class Frm_Inicio
         '
         Me.txtusuario.Location = New System.Drawing.Point(42, 84)
         Me.txtusuario.Name = "txtusuario"
-        Me.txtusuario.Size = New System.Drawing.Size(159, 21)
+        Me.txtusuario.Size = New System.Drawing.Size(159, 25)
         Me.txtusuario.TabIndex = 0
         '
         'txtpassword
@@ -43,7 +43,7 @@ Partial Public Class Frm_Inicio
         Me.txtpassword.Location = New System.Drawing.Point(42, 123)
         Me.txtpassword.Name = "txtpassword"
         Me.txtpassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtpassword.Size = New System.Drawing.Size(159, 21)
+        Me.txtpassword.Size = New System.Drawing.Size(159, 25)
         Me.txtpassword.TabIndex = 1
         '
         'Label1
@@ -91,10 +91,11 @@ Partial Public Class Frm_Inicio
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(51, 248)
+        Me.Label4.Location = New System.Drawing.Point(12, 248)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(140, 20)
-        Me.Label4.Text = " v. 12.06.2019.13.00"
+        Me.Label4.Size = New System.Drawing.Size(225, 20)
+        Me.Label4.Text = " v. 27.11.2019.0135"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Frm_Inicio
         '

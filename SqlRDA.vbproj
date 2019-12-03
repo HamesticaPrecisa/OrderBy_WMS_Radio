@@ -128,6 +128,7 @@
     <Compile Include="Clases\Conexion.vb" />
     <Compile Include="Clases\Iform.vb" />
     <Compile Include="Clases\ModPublico.vb" />
+    <Compile Include="Clases\sqlCmdResult.vb" />
     <Compile Include="Formularios\Andenes\Andenes.Designer.vb">
       <DependentUpon>Andenes.vb</DependentUpon>
     </Compile>
@@ -194,6 +195,36 @@
       <DependentUpon>FrmInventario2vb.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Inventario\FrmInventario2vb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\OTTunel\frm_BuscarGuia.Designer.vb">
+      <DependentUpon>frm_BuscarGuia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\OTTunel\frm_BuscarGuia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\OTTunel\frm_DetOTTunel.Designer.vb">
+      <DependentUpon>frm_DetOTTunel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\OTTunel\frm_DetOTTunel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\OTTunel\Frm_OTTunel.Designer.vb">
+      <DependentUpon>Frm_OTTunel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\OTTunel\Frm_OTTunel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\OTTunel\frm_PickOTTUnel.Designer.vb">
+      <DependentUpon>frm_PickOTTUnel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\OTTunel\frm_PickOTTUnel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_PosNew.Designer.vb">
+      <DependentUpon>Frm_PosNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Posicionamiento\Frm_PosNew.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Posicionamiento\Frm_Pos_Sug.Designer.vb">
@@ -486,6 +517,26 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Inventario\FrmInventario2vb.resx">
       <DependentUpon>FrmInventario2vb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\OTTunel\frm_BuscarGuia.resx">
+      <DependentUpon>frm_BuscarGuia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\OTTunel\frm_DetOTTunel.resx">
+      <DependentUpon>frm_DetOTTunel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\OTTunel\Frm_OTTunel.resx">
+      <DependentUpon>Frm_OTTunel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\OTTunel\frm_PickOTTUnel.resx">
+      <DependentUpon>frm_PickOTTUnel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Posicionamiento\Frm_PosNew.resx">
+      <DependentUpon>Frm_PosNew.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Posicionamiento\Frm_Pos_Sug.resx">

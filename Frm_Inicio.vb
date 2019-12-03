@@ -1,4 +1,6 @@
-﻿Public Class Frm_Inicio
+﻿Imports System.Data.SqlClient
+
+Public Class Frm_Inicio
 
     Dim fnc As New Funciones
 
@@ -20,10 +22,21 @@
                 txtusuario.Focus()
             End If
 
-            Dim sql As String = "SELECT usu_codigo, radio, descri FROM usuarios WHERE usu_usuario='" + txtusuario.Text + "' " & _
-                                "AND usu_pass2='" + CODIFICA(txtpassword.Text) + "'"
-
-            Dim tabla As DataTable = fnc.ListarTablasSQL(sql)
+            '
+            ' VES OCT 2019
+            '
+            ' SE MODIFICO EL CODIGO PARA PREVENIR EL SQL INJECTION, MEDIANTE EL 
+            ' USO DE VALORES PARAMETRIZADOS
+            '
+            ' CODIGO ORIGINAL:
+            ' Dim sql As String = "SELECT usu_codigo, radio, descri FROM usuarios WHERE usu_usuario='" + txtusuario.Text + "' " & _
+            '                     "AND usu_pass2='" + CODIFICA(txtpassword.Text) + "'"
+            ' Dim tabla As DataTable = fnc.ListarTablasSQL(sql)
+            Dim sql As String = "SELECT usu_codigo, radio, descri FROM usuarios WHERE usu_usuario = @usuario AND usu_pass2 = @pwd "
+            Dim tabla As DataTable = fnc.ListarTablasSQL(sql, New SqlParameter() { _
+                                                            New SqlParameter("@usuario", txtusuario.Text.Trim()), _
+                                                            New SqlParameter("@pwd", CODIFICA(txtpassword.Text.Trim())) _
+                                                         })
             If tabla.Rows.Count > 0 Then
 
                 If tabla.Rows(0)(1).ToString() = "0" Then

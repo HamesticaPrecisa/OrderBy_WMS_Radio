@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data
+Imports System.Text
 
 Public Class Funciones
 
@@ -8,14 +9,50 @@ Public Class Funciones
     Public Function ListarTablasSQL(ByVal Consulta_sql As String) As DataTable
         Dim tabla As DataTable = New DataTable
         Try
+            lastSQLError = Nothing
             con.conectarSQL()
             Dim Listado As SqlDataAdapter = New SqlDataAdapter(Consulta_sql, con.conSQL)
             Listado.Fill(tabla)
             con.cerrarSQL()
+        Catch ex As SqlException
+            lastSQLError = ex.Message
         Catch ex As Exception
-            '  MsgBox(ex.ToString())
+            lastSQLError = ex.Message
+        Finally
+            If con.conSQL.State = ConnectionState.Open Then con.cerrarSQL()
         End Try
         Return tabla
+    End Function
+
+
+    ' VES Sep 2019
+    ' Se incluye una sobrecarga que permita el uso de parametros en la sentencia SQL, para poder evitar el SqlInjection
+    Public Function ListarTablasSQL(ByVal Consulta_sql As String, ByVal parameters() As SqlParameter) As DataTable
+        Dim tabla As DataTable = New DataTable
+        Try
+            lastSQLError = Nothing
+            con.conectarSQL()
+            Dim Listado As SqlDataAdapter = New SqlDataAdapter(Consulta_sql, con.conSQL)
+
+            Listado.SelectCommand.CommandTimeout = 0
+            For Each param As SqlParameter In parameters
+                Listado.SelectCommand.Parameters.Add(param)
+            Next
+            Listado.Fill(tabla)
+            con.cerrarSQL()
+
+        Catch ex As SqlException
+            lastSQLError = ex.Message
+
+        Catch ex As Exception
+            lastSQLError = ex.Message
+
+        Finally
+            If con.conSQL.State = ConnectionState.Open Then con.cerrarSQL()
+        End Try
+        'retornar tabla con datos
+        Return tabla
+
     End Function
    
 
@@ -45,6 +82,103 @@ Public Class Funciones
             MsgBox(ex.ToString())
         End Try
         Return retorno
+    End Function
+
+    ' VES Sep 2019
+    ' Se incluye una sobrecarga que permita el uso de parametros en la sentencia SQL, para poder evitar el SqlInjection
+    Public Function MovimientoSQL(ByVal Consulta_sql As String, ByVal parameters() As SqlParameter) As Integer
+        Dim retorno As Integer = 0
+
+        Try
+            con.conectarSQL()
+            'Console.WriteLine(Consulta_sql)
+            Dim _cmd As SqlCommand = New SqlCommand(Consulta_sql, con.conSQL)
+            For Each param As SqlParameter In parameters
+                _cmd.Parameters.Add(param)
+            Next
+            _cmd.ExecuteNonQuery()
+            _cmd.CommandTimeout = 0
+            retorno = 1
+
+
+        Catch ex As SqlException
+            retorno = 0
+            lastSQLError = ex.Message
+        Catch ex As Exception
+            retorno = 0
+            lastSQLError = ex.Message
+        Finally
+            If con.conSQL.State = ConnectionState.Open Then
+                con.cerrarSQL()
+            End If
+        End Try
+
+        ' retornar 
+        '1 si se ejecuta correctamente
+        '0 si no se ejecuta
+
+        Return retorno
+    End Function
+
+    ' VES Sep 2019
+    ' Permite ejecutar un comando SQL con parametros
+    '
+    Public Function runSQLCmd(ByVal sqlCmd As SqlCommand) As sqlCmdResult
+        Dim resp As sqlCmdResult = New sqlCmdResult()
+        Try
+            con.conectarSQL()
+            sqlCmd.Connection = con.conSQL
+            If sqlCmd.CommandText.ToUpper().Substring(0, 7) = "SELECT " Then
+                Dim Listado As SqlDataAdapter = New SqlDataAdapter(sqlCmd)
+                Listado.SelectCommand.CommandTimeout = 0
+                resp.data = New DataTable()
+                Listado.Fill(resp.data)
+            Else
+                sqlCmd.CommandTimeout = 0
+                sqlCmd.ExecuteNonQuery()
+            End If
+            resp.result = True
+
+        Catch ex As Exception
+            resp.errorMsg = ex.Message
+
+        Finally
+            con.cerrarSQL()
+        End Try
+
+        Return resp
+    End Function
+    Public Function runSQLCmd(ByVal sqlCmdText As String, ByVal parameters() As SqlParameter) As sqlCmdResult
+        Dim resp As sqlCmdResult = New sqlCmdResult()
+        Try
+            Dim sqlCmd As SqlCommand = New SqlCommand(sqlCmdText)
+            For Each param As SqlParameter In parameters
+                sqlCmd.Parameters.Add(param)
+            Next
+            resp = runSQLCmd(sqlCmd)
+
+        Catch ex As Exception
+            resp.errorMsg = ex.Message
+        End Try
+        Return resp
+    End Function
+
+
+    ' VES Sep 2019
+    ' Ejecuta una consulta y devuelve el primer registro encontrado o NULL si no encuentra nada
+    '
+    Public Function sqlExecuteRow(ByVal sqlSelect As String, ByVal parameters() As SqlParameter) As DataRow
+        Dim Resp As sqlCmdResult = runSQLCmd(sqlSelect, parameters)
+        Dim result As DataRow = Nothing
+        If Resp.result And Resp.data IsNot Nothing Then
+            If Resp.data.Rows.Count > 0 Then
+                result = Resp.data.Rows(0)
+            End If
+        End If
+        Return result
+    End Function
+    Public Function sqlExecuteRow(ByVal sqlSelect As String) As DataRow
+        Return sqlExecuteRow(sqlSelect, New SqlParameter() {})
     End Function
 
     Public Function MovimientoSQLEtiquetado(ByVal Consulta_sql As String) As Integer
@@ -345,5 +479,28 @@ Public Class Funciones
     End Function
 
 
+    ' VES Sep 2019
+    Private Declare Function GetDeviceUniqueID Lib "coredll.dll" _
+         (ByVal appData As Byte(), _
+          ByVal cbApplictionData As Integer, _
+          ByVal dwDeviceIDVersion As Integer, _
+          ByVal deviceIDOutput As Byte(), _
+          ByRef pcbDeviceIDOutput As Integer) As Integer
+
+    Public Function GetDeviceID(ByVal AppString As String) As String
+        Dim AppData As Byte() = System.Text.Encoding.Unicode.GetBytes(AppString)
+        Dim appDataSize As Integer = AppData.Length
+        Dim DeviceOutput As Byte() = New Byte(19) {}
+        Dim SizeOut As Integer = 20
+        GetDeviceUniqueID(AppData, appDataSize, 1, DeviceOutput, SizeOut)
+        Dim pcid As StringBuilder = New StringBuilder()
+        For i As Integer = 0 To DeviceOutput.Length - 1
+            If i Mod 2 = 0 AndAlso i > 0 Then pcid.Append("-"c)
+            Dim token As String = CerosAnteriorString(DeviceOutput(i).ToString("X"), 2)
+            pcid.Append(token)
+        Next
+
+        Return pcid.ToString()
+    End Function
 
 End Class
