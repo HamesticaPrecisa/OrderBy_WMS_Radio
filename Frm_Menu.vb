@@ -13,7 +13,7 @@
 
 
     Private Sub Menu_pos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles m_78.Click
-        Dim f As New frm_Pos
+        Dim f As New Frm_PosNew
         f.usuario = Me.usuario
         f.cargo = Me.cargo
         f.perfil = Me.perfil
@@ -153,6 +153,12 @@
                 m_103.Enabled = True
                 ml_103.BackColor = Color.Silver
             End If
+
+
+            ' VES Sep 2019
+            ' TODO: Asignar codigo de permiso
+            m_201.Enabled = True
+            ml_201.BackColor = Color.Silver
         Next
     End Sub
 
@@ -352,8 +358,10 @@
         frm.ShowDialog()
     End Sub
 
-    Private Sub PictureBox22_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox22.Click
-        Dim frm As New Frm_Ordenar_Pallets
+
+    Private Sub m_201_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles m_201.Click
+        Cursor.Current = Cursors.WaitCursor
+        Dim frm As New Frm_OTTunel
         frm.ShowDialog()
     End Sub
 End Class

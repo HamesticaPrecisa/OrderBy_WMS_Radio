@@ -156,6 +156,204 @@ Public Class frm_Pos
         '---->
     End Sub
 
+    Private Sub borratemp()
+
+        Dim sqlEliminas As String = "DELETE FROM TMP_POS WHERE pallet='" + txtpalet.Text + "'"
+        fnc.MovimientoSQL(sqlEliminas)
+    End Sub
+
+    Private Sub temporalposicion()
+
+        Dim qry As String = "INSERT INTO TMP_POS(pallet,fechareg ,encargado)VALUES ('" + txtpalet.Text + "',GETDATE(),'" + encargado_global + "')"
+
+        fnc.MovimientoSQL(qry)
+
+
+    End Sub
+
+    Function valida_posiciones_bloqueadas() As Boolean
+        Dim BLOQUEADA As Boolean = False
+
+
+
+        '           CAMARA N° 1
+
+        If txtcamara.Text = "01" AndAlso txtbanda.Text = "02" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "01" AndAlso txtbanda.Text = "03" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "01" AndAlso txtbanda.Text = "08" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "01" AndAlso txtbanda.Text = "09" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "01" AndAlso txtbanda.Text = "14" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+
+        '           CAMARA N° 2
+
+        If txtcamara.Text = "02" AndAlso txtbanda.Text = "03" AndAlso txtcolumna.Text = "15" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "02" AndAlso txtbanda.Text = "04" AndAlso txtcolumna.Text = "15" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "02" AndAlso txtbanda.Text = "09" AndAlso txtcolumna.Text = "15" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "02" AndAlso txtbanda.Text = "10" AndAlso txtcolumna.Text = "15" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "02" AndAlso txtbanda.Text = "15" AndAlso txtcolumna.Text = "15" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "02" AndAlso txtbanda.Text = "16" AndAlso txtcolumna.Text = "15" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+
+
+
+        '           CAMARA N° 3
+
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "03" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "04" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "09" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "10" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "11" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "15" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "16" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "17" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "18" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "22" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "23" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "24" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+        If txtcamara.Text = "03" AndAlso txtbanda.Text = "" AndAlso txtcolumna.Text = "01" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
+            BLOQUEADA = True
+        End If
+
+
+
+        '           CAMARA N° 4
+
+
+        If txtcamara.Text = "04" AndAlso txtbanda.Text = "05" AndAlso txtcolumna.Text = "16" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+        If txtcamara.Text = "04" AndAlso txtbanda.Text = "06" AndAlso txtcolumna.Text = "16" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+        If txtcamara.Text = "04" AndAlso txtbanda.Text = "11" AndAlso txtcolumna.Text = "16" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+        If txtcamara.Text = "04" AndAlso txtbanda.Text = "12" AndAlso txtcolumna.Text = "16" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+        If txtcamara.Text = "04" AndAlso txtbanda.Text = "17" AndAlso txtcolumna.Text = "16" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+        If txtcamara.Text = "04" AndAlso txtbanda.Text = "18" AndAlso txtcolumna.Text = "16" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+        If txtcamara.Text = "04" AndAlso txtbanda.Text = "23" AndAlso txtcolumna.Text = "16" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+        If txtcamara.Text = "04" AndAlso txtbanda.Text = "24" AndAlso txtcolumna.Text = "16" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+        If txtcamara.Text = "04" AndAlso txtbanda.Text = "25" AndAlso txtcolumna.Text = "16" _
+        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
+            BLOQUEADA = True
+        End If
+
+        Return BLOQUEADA
+
+    End Function
+
+
+
     Private Sub txtpalet_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtpalet.KeyPress
 
         If e.KeyChar = ChrW(Keys.Enter) Then
@@ -323,11 +521,7 @@ Public Class frm_Pos
     Private Sub Posicionar_Closing(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
         BtnNuevo_Click(sender, e)
     End Sub
-    Private Sub borratemp()
 
-        Dim sqlEliminas As String = "DELETE FROM TMP_POS WHERE pallet='" + txtpalet.Text + "'"
-        fnc.MovimientoSQL(sqlEliminas)
-    End Sub
     Private Sub Posicionar_KeyPress(ByVal sender As Object, _
                                     ByVal e As System.Windows.Forms.KeyPressEventArgs, _
                                     Optional ByVal op As String = "NO") Handles MyBase.KeyPress
@@ -633,198 +827,12 @@ Public Class frm_Pos
             txtpiso.Focus()
         End If
     End Sub
-    Private Sub temporalposicion()
 
-        Dim qry As String = "INSERT INTO TMP_POS(pallet,fechareg ,encargado)VALUES ('" + txtpalet.Text + "',GETDATE(),'" + encargado_global + "')"
-
-        fnc.MovimientoSQL(qry)
-
-
-    End Sub
     ' ---------------------------------------
     ' POSICIONES QUE SE ENCUENTRAN BLOQUEADAS
     ' ---------------------------------------
 
-    Function valida_posiciones_bloqueadas() As Boolean
-        Dim BLOQUEADA As Boolean = False
 
-
-
-        '           CAMARA N° 1
-
-        If txtcamara.Text = "01" AndAlso txtbanda.Text = "02" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "01" AndAlso txtbanda.Text = "03" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "01" AndAlso txtbanda.Text = "08" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "01" AndAlso txtbanda.Text = "09" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "01" AndAlso txtbanda.Text = "14" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-
-        '           CAMARA N° 2
-
-        If txtcamara.Text = "02" AndAlso txtbanda.Text = "03" AndAlso txtcolumna.Text = "15" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "02" AndAlso txtbanda.Text = "04" AndAlso txtcolumna.Text = "15" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "02" AndAlso txtbanda.Text = "09" AndAlso txtcolumna.Text = "15" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "02" AndAlso txtbanda.Text = "10" AndAlso txtcolumna.Text = "15" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "02" AndAlso txtbanda.Text = "15" AndAlso txtcolumna.Text = "15" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "02" AndAlso txtbanda.Text = "16" AndAlso txtcolumna.Text = "15" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-
-
-
-        '           CAMARA N° 3
-
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "03" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "04" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "09" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "10" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "11" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "15" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "16" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "17" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "18" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "22" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "23" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "24" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-        If txtcamara.Text = "03" AndAlso txtbanda.Text = "" AndAlso txtcolumna.Text = "01" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "05" Then
-            BLOQUEADA = True
-        End If
-
-
-
-        '           CAMARA N° 4
-
-
-        If txtcamara.Text = "04" AndAlso txtbanda.Text = "05" AndAlso txtcolumna.Text = "16" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-        If txtcamara.Text = "04" AndAlso txtbanda.Text = "06" AndAlso txtcolumna.Text = "16" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-        If txtcamara.Text = "04" AndAlso txtbanda.Text = "11" AndAlso txtcolumna.Text = "16" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-        If txtcamara.Text = "04" AndAlso txtbanda.Text = "12" AndAlso txtcolumna.Text = "16" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-        If txtcamara.Text = "04" AndAlso txtbanda.Text = "17" AndAlso txtcolumna.Text = "16" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-        If txtcamara.Text = "04" AndAlso txtbanda.Text = "18" AndAlso txtcolumna.Text = "16" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-        If txtcamara.Text = "04" AndAlso txtbanda.Text = "23" AndAlso txtcolumna.Text = "16" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-        If txtcamara.Text = "04" AndAlso txtbanda.Text = "24" AndAlso txtcolumna.Text = "16" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-        If txtcamara.Text = "04" AndAlso txtbanda.Text = "25" AndAlso txtcolumna.Text = "16" _
-        AndAlso CerosAnteriorString(txtpiso.Text, 2) = "04" Then
-            BLOQUEADA = True
-        End If
-
-        Return BLOQUEADA
-
-    End Function
 
     Private Sub txtcolumna_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtcolumna.KeyPress
         If e.KeyChar = ChrW(13) Then

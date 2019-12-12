@@ -20,6 +20,10 @@ Module ModPublico
     Public accion_global As Integer = 1
     Public id_global As Integer = 0
 
+    ' VES Sep 2019
+    Public lastSQLError As String = ""  ' Ultimo error SQL ocurrido
+    Public deviceId As String = fnc.GetDeviceID("orderByWMS")    ' DeviceID
+
 
     Public Function devuelve_fecha(ByVal fecha As DateTime) As String
         Dim a, m, d As String
