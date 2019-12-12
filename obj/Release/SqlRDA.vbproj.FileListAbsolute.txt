@@ -163,3 +163,4 @@ Z:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.frm_Pos.resources
 Z:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.Frm_trazabilidad.resources
 Z:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.vbproj.GenerateResource.Cache
 Z:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.exe
+Z:\Work\Fuentes\NOI\DEV\ptech\radio\obj\Release\SqlRDA.Frm_Ordenar_Pallets.resources
