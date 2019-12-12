@@ -383,6 +383,12 @@
     <Compile Include="Formularios\Revision Traspaso\Revision_RaF.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_Ordenar_Pallets.Designer.vb">
+      <DependentUpon>Frm_Ordenar_Pallets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Trakeo\Frm_Ordenar_Pallets.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Trakeo\Frm_TraqueoService.Designer.vb">
       <DependentUpon>Frm_TraqueoService.vb</DependentUpon>
     </Compile>
@@ -613,6 +619,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Revision Traspaso\Revision_RaF.resx">
       <DependentUpon>Revision_RaF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Trakeo\Frm_Ordenar_Pallets.resx">
+      <DependentUpon>Frm_Ordenar_Pallets.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Trakeo\Frm_TraqueoService.resx">

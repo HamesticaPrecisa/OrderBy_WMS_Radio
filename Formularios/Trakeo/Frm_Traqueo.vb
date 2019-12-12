@@ -202,6 +202,13 @@ Public Class Frm_Traqueo
                 Exit Sub
             End If
 
+            Dim RespOrdenPallet As String = validOrdenCaja(Lector.Text.Trim)
+
+            If (RespOrdenPallet <> "1" And RespOrdenPallet <> "-1") Then
+                MsgBox("Esta caja corresponde al Pallet " & RespOrdenPallet & "", MsgBoxStyle.Information, "Error!")
+                Exit Sub
+            End If
+
             caja = Lector.Text.ToUpper
 
             If Lector.Text.Length = largo1 Or Lector.Text.Length = largo2 Or Lector.Text.Length = largo3 Or Lector.Text.Length = largo4 Or Lector.Text.Length = largo5 Then
@@ -282,6 +289,35 @@ Public Class Frm_Traqueo
             End If
         End If
     End Sub
+
+    Function validOrdenCaja(ByVal CodCaj As String) As String
+        Dim Resp As String = "-1"
+
+        Try
+            Dim CodPal As String = tpal.Text.Trim
+
+            If (CodPal <> "") Then
+                Dim sql As String = "select a.Codigo_Caja,Codigo_Pallet_Precisa=isnull(b.drec_codi,'') from Orden_Pallets a with(nolock) left outer join detarece b with(nolock) on(a.Pallet_Cliente=b.drec_sopocli and a.Rut_Cliente=b.drec_rutcli) where a.Codigo_Caja='" & CodCaj & "'"
+                Dim dt As New DataTable
+
+                dt = fnc.ListarTablasSQL(sql)
+
+                If (dt.Rows.Count > 0) Then
+                    Dim CodPalOk As String = dt.Rows(0).Item(1).ToString.Trim
+
+                    If (CodPalOk = CodPal) Then
+                        Resp = "1"
+                    Else
+                        Resp = CodPalOk
+                    End If
+                End If
+            End If
+        Catch ex As Exception
+            MsgBox("", MsgBoxStyle.Critical, "Error!")
+        End Try
+
+        Return Resp
+    End Function
 
     Private Sub ListBox1_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles ListBox1.KeyPress
         ListBox1_SelectedIndexChanged()

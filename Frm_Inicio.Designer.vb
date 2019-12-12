@@ -94,7 +94,7 @@ Partial Public Class Frm_Inicio
         Me.Label4.Location = New System.Drawing.Point(51, 248)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(140, 20)
-        Me.Label4.Text = " v. 12.06.2019.13.00"
+        Me.Label4.Text = " v. 06.12.2019.16.00"
         '
         'Frm_Inicio
         '

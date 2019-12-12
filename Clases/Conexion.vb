@@ -10,6 +10,7 @@ Public Class Conexion
         If conSQL.State = 0 Then
             Try
                 conSQL.ConnectionString = "Data Source=192.168.1.90\PRECISABD; Initial Catalog=PRECISA; Uid=sa; PWD=precisa; "
+                'conSQL.ConnectionString = "Data Source=192.168.1.90\PRECISABD; Initial Catalog=Precisa_Backup; Uid=sa; PWD=precisa; "
                 conSQL.Open()
                 intentos = 0
             Catch ex As SqlException

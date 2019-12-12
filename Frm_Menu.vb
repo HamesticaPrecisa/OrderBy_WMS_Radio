@@ -351,4 +351,9 @@
         frm.CodUsu = codigo.ToString.Trim
         frm.ShowDialog()
     End Sub
+
+    Private Sub PictureBox22_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox22.Click
+        Dim frm As New Frm_Ordenar_Pallets
+        frm.ShowDialog()
+    End Sub
 End Class
