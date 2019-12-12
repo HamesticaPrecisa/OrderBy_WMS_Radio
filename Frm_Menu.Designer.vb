@@ -91,6 +91,9 @@ Partial Public Class Frm_Menu
         Me.m_201 = New System.Windows.Forms.PictureBox
         Me.ml_201 = New System.Windows.Forms.Label
         Me.PictureBox24 = New System.Windows.Forms.PictureBox
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox
         Me.SuspendLayout()
         '
         'm_78
@@ -735,12 +738,41 @@ Partial Public Class Frm_Menu
         Me.PictureBox24.Name = "PictureBox24"
         Me.PictureBox24.Size = New System.Drawing.Size(98, 85)
         '
+        'PictureBox22
+        '
+        Me.PictureBox22.BackColor = System.Drawing.Color.White
+        Me.PictureBox22.Image = CType(resources.GetObject("PictureBox22.Image"), System.Drawing.Image)
+        Me.PictureBox22.Location = New System.Drawing.Point(617, 184)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(91, 63)
+        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.DarkGray
+        Me.Label1.Font = New System.Drawing.Font("Tahoma", 6.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Location = New System.Drawing.Point(618, 249)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(91, 15)
+        Me.Label1.Text = "ORDEN PALLET"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'PictureBox25
+        '
+        Me.PictureBox25.BackColor = System.Drawing.Color.Silver
+        Me.PictureBox25.Location = New System.Drawing.Point(614, 179)
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.PictureBox25.Size = New System.Drawing.Size(98, 85)
+        '
         'Frm_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(949, 286)
+        Me.Controls.Add(Me.PictureBox22)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox25)
         Me.Controls.Add(Me.m_201)
         Me.Controls.Add(Me.ml_201)
         Me.Controls.Add(Me.PictureBox24)
@@ -888,4 +920,7 @@ Partial Public Class Frm_Menu
     Friend WithEvents m_201 As System.Windows.Forms.PictureBox
     Friend WithEvents ml_201 As System.Windows.Forms.Label
     Friend WithEvents PictureBox24 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox22 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox25 As System.Windows.Forms.PictureBox
 End Class
