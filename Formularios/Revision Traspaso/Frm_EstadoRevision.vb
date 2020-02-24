@@ -6,7 +6,7 @@
         If e.KeyChar = ChrW(13) Then
             If TxtRece.Text.Length > 0 Then
                 TxtRece.Text = CerosAnteriorString(TxtRece.Text, 7)
-                Dim sql As String = "SELECT RIGHT(drec_codi,2) AS PALLET, isnull(drec_rev,0) FROM detarece WHERE LEFT(drec_codi,7)='" + TxtRece.Text + "' order by PALLET asc"
+                Dim sql As String = "SELECT RIGHT(drec_codi,2) AS PALLET, isnull(drec_rev,0) FROM detarece WHERE LEFT(drec_codi,7)='" + TxtRece.Text + "'"
                 Dim tabla As DataTable = fnc.ListarTablasSQL(sql)
 
                 If tabla.Rows.Count > 0 Then
