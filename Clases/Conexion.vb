@@ -9,7 +9,7 @@ Public Class Conexion
     Sub conectarSQL()
         If conSQL.State = 0 Then
             Try
-                conSQL.ConnectionString = "Data Source=192.168.1.90\PRECISABD; Initial Catalog=PRECISA; Uid=sa; PWD=precisa; "
+                conSQL.ConnectionString = "Data Source=192.168.1.90\PRECISABD;Initial Catalog=PRECISA;Uid=sa;PWD=precisa; "
 
                 'conSQL.ConnectionString = "Data Source=192.168.1.90\PRECISABD; Initial Catalog=PRECISA_BACKUP; Uid=sa; PWD=precisa; "
                 'conSQL.ConnectionString = "Data Source=10.211.55.10; Initial Catalog=PRECISA; Uid=sa; PWD=sa*2019; "
@@ -17,6 +17,8 @@ Public Class Conexion
                 intentos = 0
             Catch ex As SqlException
                 intentos = intentos + 1
+
+                MsgBox(ex.Message, MsgBoxStyle.Question, "Error")
 
                 If intentos = 5 Then
                     If MsgBox("Se perdio la conexión quiere volver a intentar conectarse?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Aviso") = MsgBoxResult.Yes Then
